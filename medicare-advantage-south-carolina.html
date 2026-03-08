@@ -169,98 +169,19 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
-
-    <!-- Logo -->
-    <a href="/" class="navbar-logo" aria-label="South Carolina Medicare Agency home">
-      <img src="https://irp.cdn-website.com/ed566c5d/dms3rep/multi/Screenshot+2024-07-02+at+11.29.07%C3%A2--AM.png" alt="Mauldin Insurance Group logo" width="40" height="40" />
+    <a href="index.html" class="navbar-logo" aria-label="South Carolina Medicare Agency home">
+      <img src="https://irp.cdn-website.com/ed566c5d/dms3rep/multi/Screenshot+2024-07-02+at+11.29.07%C3%A2--AM.png" alt="Mauldin Insurance Group logo" width="38" height="38" />
       <div class="navbar-logo-text">
         <span>Mauldin Insurance Group</span>
         <span>South Carolina Medicare Agency</span>
       </div>
     </a>
-
-    <!-- Desktop menu -->
-    <ul class="nav-menu" id="nav-menu" role="menubar">
-
-      <li role="none">
-        <button aria-haspopup="true" aria-expanded="false" role="menuitem">
-          Medicare
-          <svg class="nav-chevron" viewBox="0 0 12 12" aria-hidden="true"><polyline points="2,4 6,8 10,4"/></svg>
-        </button>
-        <ul class="nav-dropdown" role="menu" aria-label="Medicare submenu">
-          <li role="none"><a href="/medicare-advantage-south-carolina" role="menuitem"><span class="dd-icon">📋</span>Medicare Advantage</a></li>
-          <li role="none"><a href="/medicare-supplement-south-carolina" role="menuitem"><span class="dd-icon">🛡️</span>Medicare Supplement</a></li>
-          <li role="none"><a href="/medicare-part-d-south-carolina" role="menuitem"><span class="dd-icon">💊</span>Medicare Part D</a></li>
-          <li role="none"><a href="/turning-65-south-carolina" role="menuitem"><span class="dd-icon">🎂</span>Turning 65 in SC</a></li>
-        </ul>
-      </li>
-
-      <li role="none">
-        <button aria-haspopup="true" aria-expanded="false" role="menuitem">
-          Local Areas
-          <svg class="nav-chevron" viewBox="0 0 12 12" aria-hidden="true"><polyline points="2,4 6,8 10,4"/></svg>
-        </button>
-        <ul class="nav-dropdown" role="menu" aria-label="Local areas submenu">
-          <li role="none"><a href="/medicare-lexington-sc" role="menuitem"><span class="dd-icon">📍</span>Lexington, SC</a></li>
-          <li role="none"><a href="/medicare-columbia-sc" role="menuitem"><span class="dd-icon">📍</span>Columbia, SC</a></li>
-        </ul>
-      </li>
-
-      <li role="none">
-        <button aria-haspopup="true" aria-expanded="false" role="menuitem">
-          Other Coverage
-          <svg class="nav-chevron" viewBox="0 0 12 12" aria-hidden="true"><polyline points="2,4 6,8 10,4"/></svg>
-        </button>
-        <ul class="nav-dropdown" role="menu" aria-label="Other coverage submenu">
-          <li role="none"><a href="/aca-health-insurance-south-carolina" role="menuitem"><span class="dd-icon">🌿</span>ACA Health Insurance</a></li>
-          <li role="none"><a href="/final-expense-south-carolina" role="menuitem"><span class="dd-icon">💛</span>Final Expense</a></li>
-        </ul>
-      </li>
-
-      <li role="none">
-        <a href="https://www.mauldininsurancegroup.com" rel="noopener" role="menuitem">Main Website</a>
-      </li>
-
-    </ul>
-
-    <!-- Right side -->
-    <div class="nav-right">
-      <a href="tel:+18435092462" class="navbar-phone" aria-label="Call 843-509-2462">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C9.6 21 3 14.4 3 6c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-        843-509-2462
-      </a>
-      <a href="https://www.mauldininsurancegroup.com/contact" class="nav-cta-btn" rel="noopener">Free Consultation</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-
+    <a href="tel:+18435092462" class="navbar-phone">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C9.6 21 3 14.4 3 6c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      843-509-2462
+    </a>
   </nav>
-
-  <script>
-    const toggle = document.getElementById('nav-toggle');
-    const menu = document.getElementById('nav-menu');
-    toggle.addEventListener('click', () => {
-      const open = menu.classList.toggle('open');
-      toggle.classList.toggle('open', open);
-      toggle.setAttribute('aria-expanded', open);
-    });
-    menu.querySelectorAll('li > button').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const li = btn.parentElement;
-        const wasOpen = li.classList.contains('open');
-        menu.querySelectorAll('li.open').forEach(el => { el.classList.remove('open'); el.querySelector('button')?.setAttribute('aria-expanded','false'); });
-        if (!wasOpen) { li.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
-      });
-    });
-    document.addEventListener('click', e => {
-      if (!menu.contains(e.target) && !toggle.contains(e.target)) {
-        menu.querySelectorAll('li.open').forEach(el => { el.classList.remove('open'); el.querySelector('button')?.setAttribute('aria-expanded','false'); });
-      }
-    });
-  </script>
 
   <div class="subnav" role="navigation" aria-label="Topics">
     <a href="medicare-advantage-south-carolina.html" class="active">Medicare Advantage</a>
