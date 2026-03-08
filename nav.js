@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
           </ul>
         </li>
         <li><a href="/service-areas" class="nav-link">Service Areas</a></li>
-        <li><a href="https://www.mauldininsurancegroup.com" class="nav-link" target="_blank">MIG Website</a></li>
+        <li><a href="https://www.mauldininsurancegroup.com" class="nav-link" target="_blank">Main Website</a></li>
       </ul>
 
       <div class="nav-ctas">
