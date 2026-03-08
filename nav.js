@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <nav class="site-nav" id="site-nav">
     <div class="nav-inner">
       <a href="/" class="nav-logo">
-        <div class="nav-logo-icon">M</div>
+        <img src="https://irp.cdn-website.com/ed566c5d/dms3rep/multi/Screenshot+2024-07-02+at+11.29.07%C3%A2--AM.png" alt="Mauldin Insurance Group" class="nav-logo-img" />
         <div class="nav-logo-text">
           <span class="nav-logo-top">Mauldin Insurance Group</span>
           <span class="nav-logo-sub">South Carolina Medicare Agency</span>
@@ -81,19 +81,13 @@ document.addEventListener('DOMContentLoaded', function () {
       text-decoration: none;
       flex-shrink: 0;
     }
-    .nav-logo-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: white;
-      color: #1a2e5a;
-      font-size: 22px;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: Georgia, serif;
+    .nav-logo-img {
+      height: 44px;
+      width: auto;
+      max-width: 130px;
+      object-fit: contain;
       flex-shrink: 0;
+      display: block;
     }
     .nav-logo-text { display: flex; flex-direction: column; }
     .nav-logo-top { color: white; font-size: 13px; font-weight: bold; letter-spacing: 0.5px; line-height: 1.2; }
