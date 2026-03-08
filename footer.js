@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <p><a href="tel:+18039208827">803-920-8827</a></p>
           <p><a href="mailto:ben@mauldininsurancegroup.com">ben@mauldininsurancegroup.com</a></p>
           <p style="margin-top:10px;"><a href="https://www.mauldininsurancegroup.com" target="_blank">MauldinInsuranceGroup.com</a></p>
+          <p><a href="https://mauldininsurance.com" target="_blank">Auto, Home & Business Insurance →</a></p>
         </div>
 
         <div class="footer-links">
