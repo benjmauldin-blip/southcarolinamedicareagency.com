@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="footer-top">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="https://irp.cdn-website.com/ed566c5d/dms3rep/multi/Screenshot+2024-07-02+at+11.29.07%C3%A2--AM.png" alt="Mauldin Insurance Group" style="height:40px;width:auto;max-width:120px;object-fit:contain;" />
+            <img src="https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png" alt="Mauldin Insurance Group" style="height:40px;width:auto;max-width:120px;object-fit:contain;" />
             <div class="footer-logo-text">
               <span class="footer-logo-name">Mauldin Insurance Group</span>
               <span class="footer-logo-sub">South Carolina Medicare Agency</span>

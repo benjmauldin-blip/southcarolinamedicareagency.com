@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <nav class="site-nav" id="site-nav">
     <div class="nav-inner">
       <a href="/" class="nav-logo">
-        <img src="https://irp.cdn-website.com/ed566c5d/dms3rep/multi/Screenshot+2024-07-02+at+11.29.07%C3%A2--AM.png" alt="Mauldin Insurance Group" class="nav-logo-img" />
+        <img src="https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png" alt="Mauldin Insurance Group" class="nav-logo-img" />
         <div class="nav-logo-text">
           <span class="nav-logo-top">Mauldin Insurance Group</span>
           <span class="nav-logo-sub">South Carolina Medicare Agency</span>
@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
           </ul>
         </li>
         <li><a href="/service-areas" class="nav-link">Service Areas</a></li>
-        <li><a href="https://www.mauldininsurance.com" class="nav-link" target="_blank">Auto & Home Insurance</a></li>
         <li><a href="https://www.mauldininsurancegroup.com" class="nav-link" target="_blank">MIG Website</a></li>
       </ul>
 
