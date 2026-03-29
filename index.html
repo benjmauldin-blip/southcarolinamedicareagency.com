@@ -69,18 +69,96 @@
   }
 }
 </script>
-<style>
-:root {
-  --navy: #1a2e5a;
-  --navy-dark: #111f3e;
-  --gold: #c9a227;
-  --gold-light: #e0b93a;
-  --white: #ffffff;
-  --off-white: #f5f5f3;
-  --gray-light: #e8e8e4;
-  --text-dark: #1a1a1a;
-  --text-mid: #444;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a Medicare insurance agent and how can they help me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Medicare insurance agent helps you compare and enroll in Medicare plans — including Medicare Advantage, Medicare Supplement (Medigap), and Part D drug plans. An independent agent like Mauldin Insurance Group works with multiple carriers and can compare all your options at no cost to you. Their fee is paid by the insurance company, not by you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Medicare Advantage and Medicare Supplement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Medicare Advantage (Part C) replaces Original Medicare with a private plan that typically includes drug coverage and extra benefits like dental and vision, often with low or $0 premiums. Medicare Supplement (Medigap) works alongside Original Medicare to cover the 20% coinsurance and other out-of-pocket costs. The right choice depends on your health, budget, and doctors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When can I enroll in Medicare in South Carolina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can enroll during your Initial Enrollment Period — a 7-month window centered on your 65th birthday. The Annual Enrollment Period (AEP) runs October 15 through December 7 each year. Special Enrollment Periods are available for qualifying life events such as moving to South Carolina or losing employer coverage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it cost anything to use a Medicare insurance agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — working with an independent Medicare agent is completely free. Insurance carriers pay agents a commission, and your monthly premium is exactly the same whether you enroll through an agent or directly with the company. You get expert, personalized guidance at zero extra cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Medicare plans are available in South Carolina in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "South Carolina has a wide range of Medicare plans from multiple carriers. We represent 6 organizations offering 52 products in our service area, including Medicare Advantage plans, Medicare Supplement plans (Plan G and Plan N are most popular for new enrollees), and Part D prescription drug plans. Call 843-509-2462 for a free comparison."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I just moved to South Carolina. Do I need to change my Medicare plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Possibly — and it may be urgent. If you had a Medicare Advantage plan in your previous state, it likely has no in-network providers in South Carolina. Moving triggers a Special Enrollment Period, but you typically only have 60 days from your move date to act. Contact us as soon as possible to avoid any gap in coverage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Medicare Part D and do I need it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Medicare Part D is prescription drug coverage. Most people on Original Medicare should enroll in a standalone Part D plan when they first become eligible to avoid a late enrollment penalty. If you choose a Medicare Advantage plan, drug coverage is usually included. We compare Part D formularies across all available carriers to match your specific medications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Plan G and Plan N Medicare Supplement plans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both Plan G and Plan N are popular Medigap plans that cover the 20% Medicare coinsurance. Plan G covers everything except the Part B deductible ($257 in 2026), making it the most comprehensive plan available to new Medicare enrollees. Plan N has a lower monthly premium but requires small copays at doctor visits (up to $20) and emergency room visits ($50 if not admitted). The better choice depends on how often you use medical care."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I keep my doctor if I switch Medicare plans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the plan type. Medicare Supplement (Medigap) plans allow you to see any doctor or hospital that accepts Medicare nationwide — no network restrictions. Medicare Advantage plans typically have provider networks, so your doctor must be in-network. We always verify your doctors are covered before recommending any plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is Medicare Annual Enrollment Period and what can I change?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Medicare Annual Enrollment Period (AEP) runs from October 15 through December 7 every year. During this time, you can switch from Original Medicare to Medicare Advantage (or back), change your Medicare Advantage plan, or join, drop, or switch a Part D drug plan. Changes take effect January 1. We recommend reviewing your plan every year — formularies, premiums, and networks change annually."
+      }
+    }
+  ]
 }
+</script>
+<style>
+:root { --navy: #1a2e5a; --navy-dark: #111f3e; --gold: #c9a227; --gold-light: #e0b93a; --white: #ffffff; --off-white: #f5f5f3; --gray-light: #e8e8e4; --text-dark: #1a1a1a; --text-mid: #444; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Lato', sans-serif; color: var(--text-dark); background: var(--white); }
 /* ===== TOP BAR ===== */
@@ -232,6 +310,7 @@ footer { background: #0a0a0a; color: rgba(255,255,255,0.7); padding: 60px 40px 3
 </style>
 </head>
 <body>
+
 <!-- TOP CONTACT BAR -->
 <div class="top-bar">
   📞 <a href="tel:8435092462">Jennifer: (843) 509-2462</a>
@@ -442,6 +521,22 @@ footer { background: #0a0a0a; color: rgba(255,255,255,0.7); padding: 60px 40px 3
       <button class="faq-q">I just moved to South Carolina. Do I need to change my Medicare plan? <span class="arrow">+</span></button>
       <div class="faq-a">Possibly — and it may be urgent. If you had a Medicare Advantage plan in your previous state, it likely has no in-network providers here. Moving triggers a Special Enrollment Period, but you typically only have 60 days from your move date to act. Contact us as soon as possible to avoid any gap in coverage.</div>
     </div>
+    <div class="faq-item">
+      <button class="faq-q">What is Medicare Part D and do I need it? <span class="arrow">+</span></button>
+      <div class="faq-a">Medicare Part D is prescription drug coverage. Most people on Original Medicare should enroll in a standalone Part D plan when they first become eligible to avoid a late enrollment penalty. If you choose a Medicare Advantage plan, drug coverage is usually included. We compare Part D formularies across all available carriers to match your specific medications.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">What is the difference between Plan G and Plan N Medicare Supplement plans? <span class="arrow">+</span></button>
+      <div class="faq-a">Both Plan G and Plan N are popular Medigap plans that cover the 20% Medicare coinsurance. Plan G covers everything except the Part B deductible ($257 in 2026), making it the most comprehensive plan available to new Medicare enrollees. Plan N has a lower monthly premium but requires small copays at doctor visits (up to $20) and emergency room visits ($50 if not admitted). The better choice depends on how often you use medical care.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Can I keep my doctor if I switch Medicare plans? <span class="arrow">+</span></button>
+      <div class="faq-a">It depends on the plan type. Medicare Supplement (Medigap) plans allow you to see any doctor or hospital that accepts Medicare nationwide — no network restrictions. Medicare Advantage plans typically have provider networks, so your doctor must be in-network. We always verify your doctors are covered before recommending any plan.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">When is Medicare Annual Enrollment Period and what can I change? <span class="arrow">+</span></button>
+      <div class="faq-a">Medicare Annual Enrollment Period (AEP) runs from October 15 through December 7 every year. During this time, you can switch from Original Medicare to Medicare Advantage (or back), change your Medicare Advantage plan, or join, drop, or switch a Part D drug plan. Changes take effect January 1. We recommend reviewing your plan every year — formularies, premiums, and networks change annually.</div>
+    </div>
   </div>
 </section>
 
@@ -540,6 +635,6 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 </script>
+
 </body>
 </html>
-
