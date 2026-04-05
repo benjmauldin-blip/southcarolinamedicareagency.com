@@ -12,17 +12,48 @@
 {
   "@context": "https://schema.org",
   "@type": "InsuranceAgency",
-  "@id": "https://southcarolinamedicareagency.com/#organization",
-  "name": "Mauldin Insurance Group – South Carolina Medicare Agency",
-  "url": "https://southcarolinamedicareagency.com",
+  "@id": "https://www.southcarolinamedicareagency.com/#organization",
+  "name": "Mauldin Insurance Group",
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Medicare Advantage Plans", "serviceType": "Medicare Advantage Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Medicare Supplement Insurance (Medigap)", "serviceType": "Medicare Supplement Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Medicare Part D Prescription Drug Plans", "serviceType": "Medicare Part D Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Medicare Plan Reviews", "serviceType": "Medicare Insurance Review"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Medicare Enrollment Assistance", "serviceType": "Medicare Enrollment Counseling"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Turning-65 Education and Guidance", "serviceType": "Medicare Turning 65 Counseling"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Medicare Cost-Saving Strategies", "serviceType": "Medicare Financial Counseling"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Personalized Medicare Plan Comparisons", "serviceType": "Medicare Plan Comparison"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Retirement Transition Planning", "serviceType": "Retirement Insurance Planning"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ACA Health Insurance", "serviceType": "ACA Marketplace Health Insurance"}}
+  ]
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.southcarolinamedicareagency.com/#organization",
+  "name": "Mauldin Insurance Group",
+  "url": "https://www.southcarolinamedicareagency.com",
   "logo": "https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png",
-  "image": "https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png",
-  "description": "South Carolina Medicare Agency is the Medicare-focused division of Mauldin Insurance Group, an independent insurance agency based in Lexington, SC. We are the Midlands region's trusted Medicare specialists, helping South Carolinians in Lexington, Columbia, Irmo, Chapin, and across the Midlands navigate Medicare Advantage, Medicare Supplement, and Part D prescription drug plans at no cost.",
+  "description": "Independent Medicare insurance agency serving South Carolina. Compare Medicare Advantage, Supplement, and Part D plans with a local Lexington SC agent at no cost.",
+  "founder": [
+    {"@type": "Person", "name": "Jennifer Mauldin"},
+    {"@type": "Person", "name": "Benjamin Mauldin"}
+  ],
   "foundingDate": "2021",
-  "telephone": "+18435092462",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "126",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "100 Old Cherokee Rd STE F #167",
+    "streetAddress": "100 Old Cherokee Rd Ste F #167",
     "addressLocality": "Lexington",
     "addressRegion": "SC",
     "postalCode": "29072",
@@ -33,135 +64,69 @@
     "latitude": 34.0033,
     "longitude": -81.1957
   },
-  "areaServed": [
-    { "@type": "State", "name": "South Carolina" },
-    { "@type": "City", "name": "Lexington, SC" },
-    { "@type": "City", "name": "Columbia, SC" },
-    { "@type": "City", "name": "Irmo, SC" },
-    { "@type": "City", "name": "Chapin, SC" },
-    { "@type": "City", "name": "West Columbia, SC" },
-    { "@type": "AdministrativeArea", "name": "Midlands South Carolina" }
-  ],
-  "founder": [
-    { "@type": "Person", "name": "Jennifer Mauldin" },
-    { "@type": "Person", "name": "Benjamin Mauldin" }
-  ],
-  "employee": {
-    "@type": "Person",
-    "name": "Jennifer Mauldin",
-    "telephone": "+18435092462",
-    "email": "jennifer@mauldininsurancegroup.com"
-  },
-  "contactPoint": [
+  "telephone": "+1-843-509-2462",
+  "openingHoursSpecification": [
     {
-      "@type": "ContactPoint",
-      "telephone": "+18435092462",
-      "contactType": "customer service",
-      "name": "Jennifer Mauldin",
-      "areaServed": "US",
-      "availableLanguage": ["English"]
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
     }
   ],
-  "serviceType": ["Medicare Advantage", "Medicare Supplement", "Medicare Part D", "ACA Health Insurance", "Life Insurance", "Final Expense Insurance"],
+  "priceRange": "$$",
+  "areaServed": [
+    {"@type": "State", "name": "South Carolina"},
+    {"@type": "State", "name": "North Carolina"},
+    {"@type": "State", "name": "Georgia"}
+  ],
   "sameAs": [
+    "https://www.google.com/maps?cid=14600299182979997294",
+    "https://www.facebook.com/mauldininsurancegroup",
     "https://www.mauldininsurancegroup.com",
     "https://www.mauldininsurance.com",
-    "https://www.midlandsmedicare.com",
-    "https://www.facebook.com/MauldinInsuranceGroup",
-    "https://www.google.com/maps?cid=14600299182979997294"
-  ],
-  "parentOrganization": {
-    "@type": "Organization",
-    "@id": "https://www.mauldininsurancegroup.com/#organization",
-    "name": "Mauldin Insurance Group",
-    "url": "https://www.mauldininsurancegroup.com"
-  }
+    "https://www.midlandsmedicare.com"
+  ]
 }
 </script>
+
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@type": "WebSite",
+  "name": "South Carolina Medicare Agency",
+  "@id": "https://www.southcarolinamedicareagency.com/#website",
+  "url": "https://www.southcarolinamedicareagency.com",
+  "description": "South Carolina Medicare agency helping residents compare Medicare Advantage, Supplement, and Part D plans. Independent agent in Lexington SC.",
+  "publisher": {"@id": "https://www.southcarolinamedicareagency.com/#organization"},
+  "inLanguage": "en"
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What is a Medicare insurance agent and how can they help me?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A Medicare insurance agent helps you compare and enroll in Medicare plans — including Medicare Advantage, Medicare Supplement (Medigap), and Part D drug plans. An independent agent like Mauldin Insurance Group works with multiple carriers and can compare all your options at no cost to you. Their fee is paid by the insurance company, not by you."
-      }
+      "@type": "Person",
+      "name": "Jennifer Mauldin",
+      "jobTitle": "Medicare & Health Insurance Specialist",
+      "worksFor": {"@id": "https://www.southcarolinamedicareagency.com/#organization"},
+      "telephone": "+1-843-509-2462",
+      "email": "jennifer@mauldininsurancegroup.com",
+      "url": "https://www.mauldininsurancegroup.com/about",
+      "sameAs": ["https://www.linkedin.com/in/jennifer-williams-mauldin-58133029/"]
     },
     {
-      "@type": "Question",
-      "name": "What is the difference between Medicare Advantage and Medicare Supplement?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Medicare Advantage (Part C) replaces Original Medicare with a private plan that typically includes drug coverage and extra benefits like dental and vision, often with low or $0 premiums. Medicare Supplement (Medigap) works alongside Original Medicare to cover the 20% coinsurance and other out-of-pocket costs. The right choice depends on your health, budget, and doctors."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When can I enroll in Medicare in South Carolina?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can enroll during your Initial Enrollment Period — a 7-month window centered on your 65th birthday. The Annual Enrollment Period (AEP) runs October 15 through December 7 each year. Special Enrollment Periods are available for qualifying life events such as moving to South Carolina or losing employer coverage. Call us before you decide."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does it cost anything to use a Medicare insurance agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No — working with an independent Medicare agent is completely free. Insurance carriers pay agents a commission, and your monthly premium is exactly the same whether you enroll through an agent or directly with the company. You get expert, personalized guidance at zero extra cost."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What Medicare plans are available in South Carolina in 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "South Carolina has a wide range of Medicare plans from multiple carriers. We represent 6 organizations offering 52 products in our service area, including Medicare Advantage plans, Medicare Supplement plans (Plan G and Plan N are most popular for new enrollees), and Part D prescription drug plans. Call 843-509-2462 for a free comparison."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "I just moved to South Carolina. Do I need to change my Medicare plan?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Possibly — and it may be urgent. If you had a Medicare Advantage plan in your previous state, it likely has no in-network providers in South Carolina. Moving triggers a Special Enrollment Period, but you typically only have 60 days from your move date to act. Contact us as soon as possible to avoid any gap in coverage."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Medicare Part D and do I need it?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Medicare Part D is prescription drug coverage. Most people on Original Medicare should enroll in a standalone Part D plan when they first become eligible to avoid a late enrollment penalty. If you choose a Medicare Advantage plan, drug coverage is usually included. We compare Part D formularies across all available carriers to match your specific medications."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between Plan G and Plan N Medicare Supplement plans?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Both Plan G and Plan N are popular Medigap plans that cover the 20% Medicare coinsurance. Plan G covers everything except the Part B deductible ($257 in 2026), making it the most comprehensive plan available to new Medicare enrollees. Plan N has a lower monthly premium but requires small copays at doctor visits (up to $20) and emergency room visits ($50 if not admitted). The better choice depends on how often you use medical care."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I keep my doctor if I switch Medicare plans?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the plan type. Medicare Supplement (Medigap) plans allow you to see any doctor or hospital that accepts Medicare nationwide — no network restrictions. Medicare Advantage plans typically have provider networks, so your doctor must be in-network. We always verify your doctors are covered before recommending any plan."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When is Medicare Annual Enrollment Period and what can I change?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Medicare Annual Enrollment Period (AEP) runs from October 15 through December 7 every year. During this time, you can switch from Original Medicare to Medicare Advantage (or back), change your Medicare Advantage plan, or join, drop, or switch a Part D drug plan. Changes take effect January 1. We recommend reviewing your plan every year — formularies, premiums, and networks change annually."
-      }
+      "@type": "Person",
+      "name": "Ben Mauldin",
+      "jobTitle": "Independent Insurance Agent",
+      "worksFor": {"@id": "https://www.southcarolinamedicareagency.com/#organization"},
+      "telephone": "+1-803-920-8827",
+      "email": "ben@mauldininsurancegroup.com",
+      "url": "https://www.mauldininsurancegroup.com/about",
+      "sameAs": ["https://www.linkedin.com/in/ben-mauldin/"]
     }
   ]
 }
