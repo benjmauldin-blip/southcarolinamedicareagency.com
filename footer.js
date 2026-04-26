@@ -49,7 +49,13 @@ document.addEventListener('DOMContentLoaded', function () {
       font-size: 14px;
       line-height: 1.7;
       color: rgba(255,255,255,0.65);
-      margin: 0 0 20px;
+      margin: 0 0 12px;
+    }
+    .footer-address {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.5;
+      margin: 0 0 16px;
     }
     .footer-rating {
       display: flex;
@@ -145,6 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
           </div>
           <p class="footer-tagline">Independent Medicare agents serving all of South Carolina. Based in Lexington, SC. We shop dozens of plans to find your best fit — at no cost to you.</p>
+          <p class="footer-address">📍 100 Old Cherokee Rd Ste F #167, Lexington, SC 29072</p>
           <div class="footer-rating">
             <span>⭐⭐⭐⭐⭐</span>
             <span>5.0 rating · 131 Google reviews</span>
