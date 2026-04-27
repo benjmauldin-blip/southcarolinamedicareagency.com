@@ -206,6 +206,7 @@ document.addEventListener('DOMContentLoaded', function () {
       transition: all 0.3s;
     }
 
+    .nav-links-mobile-ctas { display: none; }
     @media (max-width: 900px) {
       .nav-hamburger { display: flex; }
       .nav-ctas { display: none; }
