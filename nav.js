@@ -43,11 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
           </ul>
         </li>
         <li><a href="/service-areas" class="nav-link">Service Areas</a></li>
-        <li><a href="https://www.mauldininsurancegroup.com" class="nav-link" target="_blank">MIG Website</a></li>
       </ul>
 
       <div class="nav-ctas">
         <a href="tel:+18435092462" class="nav-phone">843-509-2462</a>
+        <a href="/quiz.html" class="nav-quiz">Free Quiz</a>
         <a href="https://www.mauldininsurancegroup.com/contact" class="nav-consult" target="_blank">Free Consultation</a>
       </div>
     </div>
@@ -161,6 +161,18 @@ document.addEventListener('DOMContentLoaded', function () {
       white-space: nowrap;
     }
     .nav-phone:hover { color: white; }
+    .nav-quiz {
+      background: #0e7490;
+      color: white;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 4px;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .nav-quiz:hover { background: #0c6377; }
     .nav-consult {
       background: #c9a227;
       color: #1a2e5a;
@@ -226,17 +238,26 @@ document.addEventListener('DOMContentLoaded', function () {
       .nav-submenu li a { padding: 10px 20px; font-size: 14px; }
       .nav-dropdown:hover .nav-submenu { display: none; }
       .nav-dropdown.open .nav-submenu { display: block; }
-      .nav-phone-mobile {
-        display: block;
-        color: #c9a227;
-        text-align: center;
-        font-size: 16px;
-        font-weight: bold;
-        padding: 14px;
-        text-decoration: none;
+      .nav-links-mobile-ctas {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 24px 4px;
         border-top: 1px solid rgba(255,255,255,0.1);
         margin-top: 8px;
       }
+      .nav-links-mobile-ctas a {
+        display: block;
+        text-align: center;
+        padding: 11px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      .mobile-quiz-btn { background: #0e7490; color: white; }
+      .mobile-phone-btn { background: #c9a227; color: #1a2e5a; }
+      .mobile-consult-btn { border: 1.5px solid rgba(255,255,255,0.4); color: rgba(255,255,255,0.85); }
     }
   </style>`;
 
@@ -251,11 +272,21 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.insertAdjacentHTML('afterbegin', navHTML);
   }
 
-  // Mobile hamburger toggle
+  // Mobile hamburger toggle — also injects mobile CTAs into open menu
   setTimeout(() => {
     const hamburger = document.getElementById('nav-hamburger');
     const navLinks = document.getElementById('nav-links');
     if (hamburger && navLinks) {
+      // Add mobile CTA buttons to the bottom of the mobile menu
+      const mobileCTAs = document.createElement('li');
+      mobileCTAs.innerHTML = `
+        <div class="nav-links-mobile-ctas">
+          <a href="tel:+18435092462" class="mobile-phone-btn">📞 843-509-2462</a>
+          <a href="/quiz.html" class="mobile-quiz-btn">📋 Free Medicare Quiz</a>
+          <a href="https://www.mauldininsurancegroup.com/contact" class="mobile-consult-btn" target="_blank">Free Consultation</a>
+        </div>`;
+      navLinks.appendChild(mobileCTAs);
+
       hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('open');
       });
