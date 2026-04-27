@@ -117,11 +117,15 @@
     .hero h1{font-size:clamp(30px,5vw,52px);margin:0 0 18px;line-height:1.12}
     .hero h1 em{color:#c9a227;font-style:normal}
     .hero p{font-size:18px;color:rgba(255,255,255,0.85);margin:0 auto 32px;max-width:600px;line-height:1.65}
-    .hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
+    .hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
     .btn-primary{background:#c9a227;color:#1a2e5a;text-decoration:none;font-weight:700;padding:14px 28px;border-radius:6px;font-size:15px;transition:background .2s;display:inline-block}
     .btn-primary:hover{background:#e0b82d}
     .btn-outline{border:2px solid rgba(255,255,255,0.6);color:white;text-decoration:none;font-weight:600;padding:13px 26px;border-radius:6px;font-size:15px;transition:all .2s;display:inline-block}
     .btn-outline:hover{border-color:white;background:rgba(255,255,255,0.1)}
+    /* Quiz button — unique name to avoid nav.js conflicts */
+    .btn-quiz{border:2px solid rgba(201,162,39,0.55);color:#c9a227;text-decoration:none;font-weight:700;padding:13px 26px;border-radius:6px;font-size:15px;transition:all .2s;display:inline-block;background:rgba(201,162,39,0.1)}
+    .btn-quiz:hover{background:rgba(201,162,39,0.22);border-color:#c9a227}
+    .hero-quiz-nudge{font-size:13px;color:rgba(255,255,255,0.38);margin:0 0 24px}
     .hero-trust{display:flex;gap:24px;justify-content:center;flex-wrap:wrap}
     .hero-trust-item{font-size:13px;color:rgba(255,255,255,0.65);display:flex;align-items:center;gap:6px}
     /* Stats */
@@ -129,6 +133,20 @@
     .stat-band-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;text-align:center}
     .stat-num{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);color:var(--gold);margin-bottom:6px;display:block}
     .stat-desc{font-size:13px;color:rgba(255,255,255,0.75);line-height:1.5}
+    /* Quiz promo band */
+    .quiz-band{background:linear-gradient(135deg,#0d1e3f 0%,#1a2e5a 100%);padding:52px 20px;text-align:center;position:relative;overflow:hidden}
+    .quiz-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 80% at 50% 120%,rgba(201,162,39,0.1) 0%,transparent 70%);pointer-events:none}
+    .quiz-band-inner{max-width:700px;margin:0 auto;position:relative;z-index:1}
+    .quiz-band-eyebrow{display:inline-block;background:rgba(201,162,39,0.2);border:1px solid rgba(201,162,39,0.35);color:#c9a227;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:18px}
+    .quiz-band h2{font-size:clamp(22px,3.5vw,34px);color:white;margin:0 0 14px;line-height:1.2}
+    .quiz-band h2 em{color:#c9a227;font-style:normal}
+    .quiz-band-p{font-size:16px;color:rgba(255,255,255,0.72);margin:0 auto 24px;max-width:540px;line-height:1.65}
+    .quiz-band-stats{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
+    .quiz-band-stat{display:flex;align-items:center;gap:7px;font-size:13px;color:rgba(255,255,255,0.6)}
+    .quiz-band-dot{width:7px;height:7px;border-radius:50%;background:#c9a227;flex-shrink:0}
+    .btn-quiz-band{display:inline-flex;align-items:center;gap:8px;background:#c9a227;color:#1a2e5a;text-decoration:none;font-weight:700;padding:15px 32px;border-radius:6px;font-size:16px;transition:background .2s,transform .15s;box-shadow:0 4px 20px rgba(201,162,39,0.35)}
+    .btn-quiz-band:hover{background:#e0b82d;transform:translateY(-1px)}
+    .quiz-band-note{margin-top:14px;font-size:12px;color:rgba(255,255,255,0.35)}
     /* Sections */
     section{padding:64px 20px}
     .section-inner{max-width:1100px;margin:0 auto}
@@ -210,8 +228,10 @@
     <p>Independent Medicare agents based in Lexington, SC. We compare every plan available in your area — Medicare Advantage, Supplement, Part D, ACA, and Final Expense — at no cost to you.</p>
     <div class="hero-btns">
       <a href="tel:+18435092462" class="btn-primary">📞 Call Jennifer — 843-509-2462</a>
+      <a href="/quiz.html" class="btn-quiz">📋 Free Medicare Quiz</a>
       <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Free Consultation</a>
     </div>
+    <p class="hero-quiz-nudge">Not sure if your coverage has gaps? Take our free 3-minute self-assessment →</p>
     <div class="hero-trust">
       <span class="hero-trust-item">⭐ 5.0 Google Rating (131 reviews)</span>
       <span class="hero-trust-item">📍 100 Old Cherokee Rd, Lexington SC 29072</span>
@@ -227,6 +247,26 @@
     <div><span class="stat-num">100%</span><div class="stat-desc">Free — No Cost to You</div></div>
     <div><span class="stat-num">SC</span><div class="stat-desc">Licensed Statewide</div></div>
     <div><span class="stat-num">Local</span><div class="stat-desc">Lexington, SC Based</div></div>
+  </div>
+</div>
+
+<!-- QUIZ PROMO BAND -->
+<div class="quiz-band">
+  <div class="quiz-band-inner">
+    <div class="quiz-band-eyebrow">Free · 3 Minutes · No Obligation</div>
+    <h2>Will Medicare Leave You <em>Exposed?</em></h2>
+    <p class="quiz-band-p">Most South Carolina seniors don't realize Original Medicare has no out-of-pocket limit. One hospital stay or cancer diagnosis could cost $20,000 to $60,000 or more. Take our free quiz to find out where your coverage actually stands.</p>
+    <div class="quiz-band-stats">
+      <div class="quiz-band-stat"><div class="quiz-band-dot"></div>13 questions</div>
+      <div class="quiz-band-stat"><div class="quiz-band-dot"></div>Personalized risk score</div>
+      <div class="quiz-band-stat"><div class="quiz-band-dot"></div>Free &amp; confidential</div>
+      <div class="quiz-band-stat"><div class="quiz-band-dot"></div>No sales pressure</div>
+    </div>
+    <a href="/quiz.html" class="btn-quiz-band">
+      Take the Free Medicare Quiz
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+    <p class="quiz-band-note">Takes about 3 minutes. Jennifer will personally follow up if you have questions.</p>
   </div>
 </div>
 
@@ -418,6 +458,7 @@
   <p>Call Jennifer or schedule a free consultation. We'll compare every option available in your area and find the right plan — at no cost to you.</p>
   <div class="cta-options">
     <a href="tel:+18435092462" class="btn-primary" style="font-size:16px;padding:16px 32px;">📞 Call 843-509-2462</a>
+    <a href="/quiz.html" class="btn-quiz" style="font-size:15px;padding:15px 28px;">📋 Free Medicare Quiz</a>
     <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank" style="font-size:15px;padding:15px 28px;">Schedule Your Free Medicare Review</a>
   </div>
   <p class="cta-note">Jennifer Mauldin &nbsp;|&nbsp; 843-509-2462 &nbsp;|&nbsp; 100 Old Cherokee Rd, Lexington SC 29072</p>
