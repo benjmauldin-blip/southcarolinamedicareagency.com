@@ -152,6 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
       gap: 8px;
       margin-left: 12px;
       flex-shrink: 0;
+      flex-wrap: nowrap;
     }
     .nav-phone {
       color: #c9a227;
