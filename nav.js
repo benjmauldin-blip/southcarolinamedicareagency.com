@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="/medicare-supplement-south-carolina">🛡️ Medicare Supplement</a></li>
             <li><a href="/medicare-part-d-south-carolina">💊 Medicare Part D</a></li>
             <li><a href="/turning-65-south-carolina">🎂 Turning 65 in SC</a></li>
+            <li><a href="/moving-to-sc-medicare-guide.html" style="color:#c9a227;font-weight:bold;">🎁 Free Relocation Guide</a></li>
           </ul>
         </li>
         <li class="nav-dropdown">
