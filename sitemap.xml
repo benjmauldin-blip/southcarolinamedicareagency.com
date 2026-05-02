@@ -1,63 +1,92 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://southcarolinamedicareagency.com/</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://southcarolinamedicareagency.com/service-areas</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://southcarolinamedicareagency.com/medicare-advantage-south-carolina</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://southcarolinamedicareagency.com/medicare-supplement-south-carolina</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://southcarolinamedicareagency.com/medicare-part-d-south-carolina</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://southcarolinamedicareagency.com/turning-65-south-carolina</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://southcarolinamedicareagency.com/medicare-lexington-sc</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://southcarolinamedicareagency.com/medicare-columbia-sc</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://southcarolinamedicareagency.com/aca-health-insurance-south-carolina</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://southcarolinamedicareagency.com/final-expense-south-carolina</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+<url>
+<loc>https://southcarolinamedicareagency.com/</loc>
+<lastmod>2026-05-02</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://southcarolinamedicareagency.com/service-areas</loc>
+<lastmod>2026-03-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://southcarolinamedicareagency.com/medicare-advantage-south-carolina</loc>
+<lastmod>2026-03-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://southcarolinamedicareagency.com/medicare-supplement-south-carolina</loc>
+<lastmod>2026-03-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://southcarolinamedicareagency.com/medicare-part-d-south-carolina</loc>
+<lastmod>2026-03-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://southcarolinamedicareagency.com/turning-65-south-carolina</loc>
+<lastmod>2026-03-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://southcarolinamedicareagency.com/medicare-lexington-sc</loc>
+<lastmod>2026-03-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://southcarolinamedicareagency.com/medicare-columbia-sc</loc>
+<lastmod>2026-03-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://southcarolinamedicareagency.com/aca-health-insurance-south-carolina</loc>
+<lastmod>2026-03-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://southcarolinamedicareagency.com/final-expense-south-carolina</loc>
+<lastmod>2026-03-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://southcarolinamedicareagency.com/why-medicare-advantage-networks-change-by-county-south-carolina</loc>
+<lastmod>2026-05-02</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://southcarolinamedicareagency.com/medicare-advantage-county-based-south-carolina</loc>
+<lastmod>2026-05-02</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://southcarolinamedicareagency.com/how-to-check-doctor-in-network-south-carolina</loc>
+<lastmod>2026-05-02</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://southcarolinamedicareagency.com/what-happens-if-you-move-counties-medicare-advantage-south-carolina</loc>
+<lastmod>2026-05-02</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://southcarolinamedicareagency.com/hmo-vs-ppo-medicare-advantage-south-carolina</loc>
+<lastmod>2026-05-02</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
 </urlset>
