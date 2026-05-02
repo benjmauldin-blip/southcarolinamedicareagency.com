@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     .footer-inner { max-width: 1100px; margin: 0 auto; }
     .footer-top {
       display: grid;
-      grid-template-columns: 2fr 1.2fr 1.2fr;
+      grid-template-columns: 1.6fr 1fr 1fr 1.1fr;
       gap: 48px;
       padding-bottom: 40px;
       border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -40,7 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
     .footer-links ul li a:hover { color: #c9a227; }
     .footer-disclaimer { font-size: 11px; color: rgba(255,255,255,0.35); line-height: 1.6; margin: 28px 0 0; padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.07); }
     .footer-copy { font-size: 12px; color: rgba(255,255,255,0.4); text-align: center; padding: 16px 0 24px; margin: 0; border-top: 1px solid rgba(255,255,255,0.07); }
-    @media (max-width: 768px) { .footer-top { grid-template-columns: 1fr; gap: 32px; } }
+    @media (max-width: 1024px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; } }
+    @media (max-width: 640px) { .footer-top { grid-template-columns: 1fr; gap: 32px; } }
   </style>`;
 
   const footerHTML = `
@@ -88,6 +89,18 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="/aca-health-insurance-south-carolina">ACA Health Insurance</a></li>
             <li><a href="/final-expense-south-carolina">Final Expense</a></li>
             <li><a href="/service-areas">🗺️ All Service Areas</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Local Medicare in the Midlands</h4>
+          <ul>
+            <li><a href="https://midlandsmedicare.com/medicare-lexington-sc.html">Lexington Medicare Help</a></li>
+            <li><a href="https://midlandsmedicare.com/medicare-columbia-sc.html">Columbia Medicare Help</a></li>
+            <li><a href="https://midlandsmedicare.com/medicare-irmo-sc.html">Irmo Medicare Help</a></li>
+            <li><a href="https://midlandsmedicare.com/medicare-chapin-sc.html">Chapin / Lake Murray Medicare</a></li>
+            <li><a href="https://midlandsmedicare.com/medicare-cayce-west-columbia-sc.html">Cayce / W. Columbia Medicare</a></li>
+            <li><a href="https://midlandsmedicare.com/medicare-blythewood-sc.html">Blythewood Medicare Help</a></li>
+            <li><a href="https://midlandsmedicare.com" style="color:#c9a227;font-weight:600;">→ MidlandsMedicare.com</a></li>
           </ul>
         </div>
       </div>
