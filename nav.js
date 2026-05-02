@@ -34,6 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
           <ul class="nav-submenu">
             <li><a href="/medicare-lexington-sc">📍 Lexington, SC</a></li>
             <li><a href="/medicare-columbia-sc">📍 Columbia, SC</a></li>
+            <li><a href="https://midlandsmedicare.com/medicare-irmo-sc.html">📍 Irmo, SC</a></li>
+            <li><a href="https://midlandsmedicare.com/medicare-chapin-sc.html">📍 Chapin & Lake Murray</a></li>
+            <li><a href="https://midlandsmedicare.com/medicare-blythewood-sc.html">📍 Blythewood, SC</a></li>
+            <li><a href="https://midlandsmedicare.com/medicare-cayce-west-columbia-sc.html">📍 Cayce & W. Columbia</a></li>
             <li><a href="/service-areas">🗺️ All SC Service Areas</a></li>
           </ul>
         </li>
