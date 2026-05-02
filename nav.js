@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="/medicare-supplement-south-carolina">🛡️ Medicare Supplement</a></li>
             <li><a href="/medicare-part-d-south-carolina">💊 Medicare Part D</a></li>
             <li><a href="/turning-65-south-carolina">🎂 Turning 65 in SC</a></li>
+            <li><a href="/why-medicare-advantage-networks-change-by-county-south-carolina">🗺️ County-Based Networks Explained</a></li>
             <li><a href="/moving-to-sc-medicare-guide.html" style="color:#c9a227;font-weight:bold;">🎁 Free Relocation Guide</a></li>
           </ul>
         </li>
@@ -41,6 +42,15 @@ document.addEventListener('DOMContentLoaded', function () {
           <ul class="nav-submenu">
             <li><a href="/aca-health-insurance-south-carolina">🌿 ACA Health Insurance</a></li>
             <li><a href="/final-expense-south-carolina">💛 Final Expense</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <button class="nav-link nav-drop-btn">Resources <span class="nav-arrow">▾</span></button>
+          <ul class="nav-submenu">
+            <li><a href="/medicare-advantage-county-based-south-carolina">📘 County-Based Plans Explained</a></li>
+            <li><a href="/how-to-check-doctor-in-network-south-carolina">🔍 Check Your Doctor's Network</a></li>
+            <li><a href="/what-happens-if-you-move-counties-medicare-advantage-south-carolina">📦 Moving Counties on Medicare</a></li>
+            <li><a href="/hmo-vs-ppo-medicare-advantage-south-carolina">⚖️ HMO vs PPO in SC</a></li>
           </ul>
         </li>
         <li><a href="/service-areas" class="nav-link">Service Areas</a></li>
