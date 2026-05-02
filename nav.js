@@ -51,6 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="/how-to-check-doctor-in-network-south-carolina">🔍 Check Your Doctor's Network</a></li>
             <li><a href="/what-happens-if-you-move-counties-medicare-advantage-south-carolina">📦 Moving Counties on Medicare</a></li>
             <li><a href="/hmo-vs-ppo-medicare-advantage-south-carolina">⚖️ HMO vs PPO in SC</a></li>
+            <li><a href="/medicare-advantage-online-vs-local-south-carolina">📺 Online vs Local Plans</a></li>
+            <li><a href="/medicare-advantage-rural-counties-south-carolina">🌾 Rural SC Counties</a></li>
           </ul>
         </li>
         <li><a href="/service-areas" class="nav-link">Service Areas</a></li>
