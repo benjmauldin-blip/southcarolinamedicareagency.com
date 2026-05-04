@@ -10,100 +10,143 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "InsuranceAgency",
-    "@id": "https://www.southcarolinamedicareagency.com/#agency",
-    "name": "South Carolina Medicare Agency — Mauldin Insurance Group",
-    "url": "https://southcarolinamedicareagency.com",
-    "telephone": "+18435092462",
-    "email": "jennifer@mauldininsurancegroup.com",
-    "description": "Independent Medicare insurance agents based in Lexington, SC serving the Midlands region and all of South Carolina. We compare Medicare Advantage, Medicare Supplement, Part D, ACA, and Final Expense plans at no cost.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "100 Old Cherokee Rd Ste F #167",
-      "addressLocality": "Lexington",
-      "addressRegion": "SC",
-      "postalCode": "29072",
-      "addressCountry": "US"
-    },
-    "areaServed": {"@type": "State", "name": "South Carolina"},
-    "sameAs": ["https://www.mauldininsurancegroup.com", "https://www.midlandsmedicare.com"]
-  }
-  </script>
+  Here is the complete schema — all 5 blocks — ready to replace everything in your <head> from the first <script type="application/ld+json"> through the last </script>:
+html<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "@id": "https://www.southcarolinamedicareagency.com/#agency",
+  "name": "South Carolina Medicare Agency — Mauldin Insurance Group",
+  "url": "https://southcarolinamedicareagency.com",
+  "telephone": "+18435092462",
+  "email": "jennifer@mauldininsurancegroup.com",
+  "description": "Independent Medicare insurance agents based in Lexington, SC serving the Midlands region and all of South Carolina. We compare Medicare Advantage, Medicare Supplement, Part D, ACA, and Final Expense plans at no cost.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "100 Old Cherokee Rd Ste F #167",
+    "addressLocality": "Lexington",
+    "addressRegion": "SC",
+    "postalCode": "29072",
+    "addressCountry": "US"
+  },
+  "areaServed": {"@type": "State", "name": "South Carolina"},
+  "sameAs": ["https://www.mauldininsurancegroup.com", "https://www.midlandsmedicare.com", "https://www.mauldininsurance.com"],
+  "parentOrganization": {"@id": "https://www.mauldininsurancegroup.com/#organization"}
+}
+</script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["InsuranceAgency", "LocalBusiness"],
-    "@id": "https://www.southcarolinamedicareagency.com/#localbusiness",
-    "name": "South Carolina Medicare Agency",
-    "url": "https://southcarolinamedicareagency.com",
-    "telephone": "+18435092462",
-    "email": "jennifer@mauldininsurancegroup.com",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "131",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "100 Old Cherokee Rd Ste F #167",
-      "addressLocality": "Lexington",
-      "addressRegion": "SC",
-      "postalCode": "29072",
-      "addressCountry": "US"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Lexington"},
-      {"@type": "City", "name": "Columbia"},
-      {"@type": "City", "name": "Irmo"},
-      {"@type": "City", "name": "Chapin"},
-      {"@type": "City", "name": "West Columbia"},
-      {"@type": "City", "name": "Cayce"},
-      {"@type": "City", "name": "Blythewood"},
-      {"@type": "City", "name": "Newberry"},
-      {"@type": "State", "name": "South Carolina"}
-    ],
-    "sameAs": ["https://www.mauldininsurancegroup.com", "https://www.midlandsmedicare.com"]
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "@id": "https://www.southcarolinamedicareagency.com/#localbusiness",
+  "name": "South Carolina Medicare Agency",
+  "url": "https://southcarolinamedicareagency.com",
+  "telephone": "+18435092462",
+  "email": "jennifer@mauldininsurancegroup.com",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "131",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "100 Old Cherokee Rd Ste F #167",
+    "addressLocality": "Lexington",
+    "addressRegion": "SC",
+    "postalCode": "29072",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Lexington"},
+    {"@type": "City", "name": "Columbia"},
+    {"@type": "City", "name": "Irmo"},
+    {"@type": "City", "name": "Chapin"},
+    {"@type": "City", "name": "West Columbia"},
+    {"@type": "City", "name": "Cayce"},
+    {"@type": "City", "name": "Blythewood"},
+    {"@type": "City", "name": "Newberry"},
+    {"@type": "State", "name": "South Carolina"}
+  ],
+  "sameAs": ["https://www.mauldininsurancegroup.com", "https://www.midlandsmedicare.com", "https://www.mauldininsurance.com"]
+}
+</script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "South Carolina Medicare Agency",
-    "url": "https://southcarolinamedicareagency.com"
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "South Carolina Medicare Agency",
+  "url": "https://southcarolinamedicareagency.com"
+}
+</script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "name": "Jennifer Mauldin",
-        "jobTitle": "Medicare Insurance Agent",
-        "telephone": "+18435092462",
-        "email": "jennifer@mauldininsurancegroup.com",
-        "worksFor": {"@id": "https://www.southcarolinamedicareagency.com/#agency"}
-      },
-      {
-        "@type": "Person",
-        "name": "Ben Mauldin",
-        "jobTitle": "Independent Insurance Agent",
-        "telephone": "+18039208827",
-        "email": "ben@mauldininsurancegroup.com",
-        "worksFor": {"@id": "https://www.southcarolinamedicareagency.com/#agency"}
-      }
-    ]
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.mauldininsurancegroup.com/#jennifer",
+      "name": "Jennifer Mauldin",
+      "jobTitle": "Medicare Insurance Agent",
+      "telephone": "+18435092462",
+      "email": "jennifer@mauldininsurancegroup.com",
+      "worksFor": {"@id": "https://www.mauldininsurancegroup.com/#organization"}
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.mauldininsurancegroup.com/#ben",
+      "name": "Ben Mauldin",
+      "jobTitle": "Independent Insurance Agent",
+      "telephone": "+18039208827",
+      "email": "ben@mauldininsurancegroup.com",
+      "worksFor": {"@id": "https://www.mauldininsurancegroup.com/#organization"}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between Medicare Advantage and Medicare Supplement in South Carolina?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Medicare Advantage (Part C) is an all-in-one alternative to Original Medicare offered by private insurers in South Carolina. It typically bundles Parts A, B, and D in one plan and often includes extra benefits like dental, vision, and hearing — usually with low or $0 monthly premiums. However, it uses provider networks, which means your doctors and hospitals must participate in the plan. Medicare Supplement (Medigap) works alongside Original Medicare and covers most out-of-pocket costs Original Medicare leaves behind, such as the 20% coinsurance. Supplement plans carry a monthly premium but allow you to see any Medicare-accepting doctor or hospital in the country with no networks and no referrals. We help every South Carolina client compare both approaches side by side at no cost."}
+    },
+    {
+      "@type": "Question",
+      "name": "When should I sign up for Medicare if I live in South Carolina?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Your Initial Enrollment Period begins 3 months before the month you turn 65 and ends 3 months after — a 7-month window total. If you are still working and covered by employer insurance from a company with 20 or more employees, you may be able to delay Medicare without penalty. If you miss your window without a qualifying reason, you face permanent late enrollment penalties on your Part B premium — 10% for each 12-month period you delayed. We strongly recommend calling us 3 to 4 months before your 65th birthday so we can map out your enrollment timeline, verify your eligibility, and compare every plan available in your South Carolina zip code at no cost."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is Medicare consulting really free in South Carolina?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes — completely free, with no obligation. South Carolina Medicare Agency is compensated by insurance carriers when you enroll in a plan. Your monthly premium is identical whether you enroll through us or go directly to the carrier yourself. We never charge consulting fees, never pressure you into a decision, and are available year-round to answer questions about your coverage. There is never any cost at any stage of working with us."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do you help Medicare clients across all of South Carolina or only the Midlands?",
+      "acceptedAnswer": {"@type": "Answer", "text": "We serve Medicare clients anywhere in South Carolina. While we are based in Lexington, SC and do significant in-person work across the Midlands — Lexington, Columbia, Irmo, Chapin, Cayce, West Columbia, and Blythewood — we regularly help clients in Greenville, Spartanburg, Charleston, Myrtle Beach, Hilton Head, Florence, Sumter, and everywhere in between. Most Medicare consultations are handled efficiently by phone or video, so distance is never a barrier to getting the same quality of service."}
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to my Medicare if I move to South Carolina?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Original Medicare (Parts A and B) transfers seamlessly when you move to South Carolina. Most Medicare Supplement (Medigap) plans also transfer without issue since they work with any Medicare-accepting provider nationwide. However, Medicare Advantage plans are regional — if your current plan does not serve your new South Carolina zip code, you will qualify for a Special Enrollment Period to switch plans. Moving to a new state also triggers a Special Enrollment Period for Part D drug plans. We help new South Carolina residents sort out their Medicare quickly and correctly so there is no gap in coverage."}
+    },
+    {
+      "@type": "Question",
+      "name": "What Medicare plans are available in South Carolina?",
+      "acceptedAnswer": {"@type": "Answer", "text": "South Carolina Medicare beneficiaries have access to Medicare Advantage plans (Part C), Medicare Supplement plans (Medigap — Plan G and Plan N are most popular for new enrollees), and Medicare Part D prescription drug plans. Plan availability and pricing vary by zip code across the state. In the Midlands region around Lexington and Columbia, there is typically a strong selection of both Advantage and Supplement plans. We compare every carrier and plan available in your specific South Carolina zip code and walk you through the options at no cost. Call Jennifer at (843) 509-2462 to schedule a free comparison."}
+    }
+  ]
+}
+</script>
 
   <style>
     :root{--navy:#1a2e5a;--gold:#c9a227;--off-white:#f8f6f0}
