@@ -1,105 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
   <url>
     <loc>https://southcarolinamedicareagency.com/</loc>
-    <lastmod>2026-05-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Core Service Hub -->
   <url>
     <loc>https://southcarolinamedicareagency.com/service-areas</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.92</priority>
   </url>
+
+  <!-- Core Medicare Pages -->
   <url>
     <loc>https://southcarolinamedicareagency.com/medicare-advantage-south-carolina</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
+
   <url>
     <loc>https://southcarolinamedicareagency.com/medicare-supplement-south-carolina</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.93</priority>
   </url>
+
   <url>
     <loc>https://southcarolinamedicareagency.com/medicare-part-d-south-carolina</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.88</priority>
   </url>
+
   <url>
     <loc>https://southcarolinamedicareagency.com/turning-65-south-carolina</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
+
+  <!-- Local SEO Pages -->
   <url>
     <loc>https://southcarolinamedicareagency.com/medicare-lexington-sc</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
   </url>
+
   <url>
     <loc>https://southcarolinamedicareagency.com/medicare-columbia-sc</loc>
-    <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
   </url>
+
+  <!-- Additional Products -->
   <url>
     <loc>https://southcarolinamedicareagency.com/aca-health-insurance-south-carolina</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://southcarolinamedicareagency.com/final-expense-south-carolina</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Authority / Educational Cluster -->
   <url>
     <loc>https://southcarolinamedicareagency.com/why-medicare-advantage-networks-change-by-county-south-carolina</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://southcarolinamedicareagency.com/medicare-advantage-county-based-south-carolina</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.82</priority>
   </url>
+
   <url>
     <loc>https://southcarolinamedicareagency.com/how-to-check-doctor-in-network-south-carolina</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.84</priority>
   </url>
+
   <url>
     <loc>https://southcarolinamedicareagency.com/what-happens-if-you-move-counties-medicare-advantage-south-carolina</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.84</priority>
   </url>
+
   <url>
     <loc>https://southcarolinamedicareagency.com/hmo-vs-ppo-medicare-advantage-south-carolina</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.84</priority>
   </url>
+
   <url>
     <loc>https://southcarolinamedicareagency.com/medicare-advantage-online-vs-local-south-carolina</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.83</priority>
   </url>
+
   <url>
     <loc>https://southcarolinamedicareagency.com/medicare-advantage-rural-counties-south-carolina</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.82</priority>
   </url>
+
+  <!-- Suggested High-Authority Supporting Pages -->
+  <url>
+    <loc>https://southcarolinamedicareagency.com/medicare-special-election-period-south-carolina</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.83</priority>
+  </url>
+
+  <url>
+    <loc>https://southcarolinamedicareagency.com/medicare-advantage-vs-medicare-supplement-south-carolina</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://southcarolinamedicareagency.com/moving-to-south-carolina-with-medicare</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+
+  <url>
+    <loc>https://southcarolinamedicareagency.com/contact</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://southcarolinamedicareagency.com/free-medicare-review</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
 </urlset>
