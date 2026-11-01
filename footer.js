@@ -72,35 +72,24 @@ document.addEventListener('DOMContentLoaded', function () {
           <p><a href="tel:+18039208827">803-920-8827</a></p>
           <p><a href="mailto:ben@mauldininsurancegroup.com">ben@mauldininsurancegroup.com</a></p>
           <p style="margin-top:14px;"><a href="https://www.mauldininsurancegroup.com" target="_blank">MauldinInsuranceGroup.com →</a></p>
-          <p><a href="https://www.mauldininsurance.com" target="_blank">MauldinInsurance.com — Auto, Home &amp; Business →</a></p>
-          <p><a href="https://www.midlandsmedicare.com" target="_blank">MidlandsMedicare.com →</a></p>
+          <p><a href="https://www.mauldininsurancegroup.com/property-and-casualty" target="_blank">Auto, Home &amp; Business →</a></p>
         </div>
         <div class="footer-links">
-          <h4>Quick Links</h4>
+          <h4>Moving with Medicare</h4>
           <ul>
-            <li><a href="/medicare-advantage-south-carolina">Medicare Advantage</a></li>
-            <li><a href="/medicare-supplement-south-carolina">Medicare Supplement</a></li>
-            <li><a href="/medicare-part-d-south-carolina">Medicare Part D</a></li>
-            <li><a href="/turning-65-south-carolina">Turning 65 in SC</a></li>
-            <li><a href="/working-past-65-south-carolina">Working Past 65</a></li>
-            <li><a href="/moving-to-south-carolina-medicare">Moving to SC</a></li>
-            <li><a href="/medicare-lexington-sc">Medicare in Lexington</a></li>
-            <li><a href="/medicare-columbia-sc">Medicare in Columbia</a></li>
-            <li><a href="/aca-health-insurance-south-carolina">ACA Health Insurance</a></li>
-            <li><a href="/final-expense-south-carolina">Final Expense</a></li>
-            <li><a href="/service-areas">🗺️ All Service Areas</a></li>
+            <li><a href="/move-checker.html">Medicare Moving Checker</a></li>
+            <li><a href="/moving-to-sc-medicare-guide.html">Moving to SC Guide</a></li>
+            <li><a href="/what-happens-if-you-move-counties-medicare-advantage-south-carolina">Moving Counties on Medicare</a></li>
+            <li><a href="/why-medicare-advantage-networks-change-by-county-south-carolina">Why Networks Change by County</a></li>
           </ul>
         </div>
         <div class="footer-links">
-          <h4>Local Medicare in the Midlands</h4>
+          <h4>More Free Medicare Tools</h4>
           <ul>
-            <li><a href="https://midlandsmedicare.com/medicare-lexington-sc.html">Lexington Medicare Help</a></li>
-            <li><a href="https://midlandsmedicare.com/medicare-columbia-sc.html">Columbia Medicare Help</a></li>
-            <li><a href="https://midlandsmedicare.com/medicare-irmo-sc.html">Irmo Medicare Help</a></li>
-            <li><a href="https://midlandsmedicare.com/medicare-chapin-sc.html">Chapin / Lake Murray Medicare</a></li>
-            <li><a href="https://midlandsmedicare.com/medicare-cayce-west-columbia-sc.html">Cayce / W. Columbia Medicare</a></li>
-            <li><a href="https://midlandsmedicare.com/medicare-blythewood-sc.html">Blythewood Medicare Help</a></li>
-            <li><a href="https://midlandsmedicare.com" style="color:#c9a227;font-weight:600;">→ MidlandsMedicare.com</a></li>
+            <li><a href="https://midlandsmedicare.com/deadlines.html">Medicare Deadlines Calculator</a></li>
+            <li><a href="https://midlandsmedicare.com/quiz.html">Medicare Coverage Quiz</a></li>
+            <li><a href="https://midlandsmedicare.com/checklist.html">Plan Review Checklist</a></li>
+            <li><a href="https://www.mauldininsurancegroup.com/medicare" style="color:#c9a227;font-weight:600;">Medicare Plans in SC →</a></li>
           </ul>
         </div>
       </div>

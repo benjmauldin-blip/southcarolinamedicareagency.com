@@ -18,45 +18,22 @@ document.addEventListener('DOMContentLoaded', function () {
       </button>
 
       <ul class="nav-links" id="nav-links">
+        <li><a class="nav-link" href="/move-checker.html" style="color:#c9a227;font-weight:700;">Moving Checker</a></li>
+        <li><a class="nav-link" href="/moving-to-sc-medicare-guide.html">Free Relocation Guide</a></li>
         <li class="nav-dropdown">
-          <button class="nav-link nav-drop-btn">Medicare <span class="nav-arrow">▾</span></button>
+          <button class="nav-link nav-drop-btn">County Moves <span class="nav-arrow">▾</span></button>
           <ul class="nav-submenu">
-            <li><a href="/medicare-advantage-south-carolina">📋 Medicare Advantage</a></li>
-            <li><a href="/medicare-supplement-south-carolina">🛡️ Medicare Supplement</a></li>
-            <li><a href="/medicare-part-d-south-carolina">💊 Medicare Part D</a></li>
-            <li><a href="/turning-65-south-carolina">🎂 Turning 65 in SC</a></li>
-            <li><a href="/why-medicare-advantage-networks-change-by-county-south-carolina">🗺️ County-Based Networks Explained</a></li>
-            <li><a href="/moving-to-sc-medicare-guide.html" style="color:#c9a227;font-weight:bold;">🎁 Free Relocation Guide</a></li>
+            <li><a href="/what-happens-if-you-move-counties-medicare-advantage-south-carolina">Moving Counties on Medicare</a></li>
+            <li><a href="/why-medicare-advantage-networks-change-by-county-south-carolina">Why Networks Change by County</a></li>
           </ul>
         </li>
         <li class="nav-dropdown">
-          <button class="nav-link nav-drop-btn">Local Areas <span class="nav-arrow">▾</span></button>
+          <button class="nav-link nav-drop-btn">More Tools <span class="nav-arrow">▾</span></button>
           <ul class="nav-submenu">
-            <li><a href="/medicare-lexington-sc">📍 Lexington, SC</a></li>
-            <li><a href="/medicare-columbia-sc">📍 Columbia, SC</a></li>
-            <li><a href="/medicare-irmo-sc">📍 Irmo, SC</a></li>
-            <li><a href="/medicare-chapin-sc">📍 Chapin & Lake Murray</a></li>
-            <li><a href="/medicare-blythewood-sc">📍 Blythewood, SC</a></li>
-            <li><a href="/medicare-cayce-west-columbia-sc">📍 Cayce & W. Columbia</a></li>
-            <li><a href="/service-areas">🗺️ All SC Service Areas</a></li>
-          </ul>
-        </li>
-        <li class="nav-dropdown">
-          <button class="nav-link nav-drop-btn">Other Coverage <span class="nav-arrow">▾</span></button>
-          <ul class="nav-submenu">
-            <li><a href="/aca-health-insurance-south-carolina">🌿 ACA Health Insurance</a></li>
-            <li><a href="/final-expense-south-carolina">💛 Final Expense</a></li>
-          </ul>
-        </li>
-        <li class="nav-dropdown">
-          <button class="nav-link nav-drop-btn">Resources <span class="nav-arrow">▾</span></button>
-          <ul class="nav-submenu">
-            <li><a href="/medicare-advantage-county-based-south-carolina">📘 County-Based Plans Explained</a></li>
-            <li><a href="/how-to-check-doctor-in-network-south-carolina">🔍 Check Your Doctor's Network</a></li>
-            <li><a href="/what-happens-if-you-move-counties-medicare-advantage-south-carolina">📦 Moving Counties on Medicare</a></li>
-            <li><a href="/hmo-vs-ppo-medicare-advantage-south-carolina">⚖️ HMO vs PPO in SC</a></li>
-            <li><a href="/medicare-advantage-online-vs-local-south-carolina">📺 Online vs Local Plans</a></li>
-            <li><a href="/medicare-advantage-rural-counties-south-carolina">🌾 Rural SC Counties</a></li>
+            <li><a href="https://midlandsmedicare.com/deadlines.html">Medicare Deadlines Calculator</a></li>
+            <li><a href="https://midlandsmedicare.com/quiz.html">Medicare Coverage Quiz</a></li>
+            <li><a href="https://midlandsmedicare.com/checklist.html">Plan Review Checklist</a></li>
+            <li><a href="https://www.mauldininsurancegroup.com/medicare">Medicare Plans in SC</a></li>
           </ul>
         </li>
         <li><a href="/service-areas" class="nav-link">Service Areas</a></li>

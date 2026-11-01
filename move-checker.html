@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Medicare Moving Checker for South Carolina | SC Medicare Agency</title>
+<meta name="description" content="Moving to South Carolina or to a new SC county with Medicare? See your exact plan-change deadline and a to-do list for Medicare Advantage, supplements and drug plans." />
+<link rel="canonical" href="https://southcarolinamedicareagency.com/move-checker.html" />
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta property="og:title" content="Medicare Moving Checker for South Carolina | SC Medicare Agency" />
+<meta property="og:description" content="Moving to South Carolina or to a new SC county with Medicare? See your exact plan-change deadline and a to-do list for Medicare Advantage, supplements and drug plans." />
+<meta property="og:url" content="https://southcarolinamedicareagency.com/move-checker.html" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/tools.css" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Medicare Moving Checker","url":"https://southcarolinamedicareagency.com/move-checker.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"InsuranceAgency","@id":"https://www.mauldininsurancegroup.com/#organization","name":"Mauldin Insurance Group"}}</script><style>
+.inputs{display:grid;grid-template-columns:1fr;gap:20px}
+.qlabel,label[for=when]{display:block;font-weight:700;margin-bottom:8px}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg button{font:inherit;font-size:16px;font-weight:600;padding:9px 16px;border-radius:999px;border:2px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer;min-height:44px}
+.seg button[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.checks{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:16px}
+.checks label{display:flex;gap:8px;align-items:center;cursor:pointer}
+.checks input{width:20px;height:20px;accent-color:var(--teal)}
+input[type=month]{font:inherit;font-size:18px;padding:10px 12px;border:2px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg);max-width:100%}
+.hint{font-size:14px;color:var(--muted);margin-top:4px}
+.example{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--warn);margin-bottom:10px}
+.big{font-size:20px;margin:0 0 8px;color:var(--navy)}
+.window{font-size:22px;background:var(--goldsoft);border:1px solid var(--gold);border-radius:10px;padding:12px 16px;margin:10px 0;font-variant-numeric:tabular-nums}
+.note{font-size:16px;color:var(--muted);margin:0}
+.warn{font-size:16px;color:var(--bad);font-weight:600;margin:10px 0 0}
+.todo{margin:0;padding-left:26px;display:grid;gap:14px}
+.todo li b{display:block;color:var(--navy)}
+.todo li span{color:var(--muted);font-size:17px}
+</style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<main class="wrap">
+  <div class="eyebrow">Free tool · SC Medicare Agency</div>
+  <h1>Moving with Medicare? See what you need to do</h1>
+  <p class="lede">Moving to South Carolina, to a new county here, or out of state can change your Medicare coverage. Answer three questions to see your deadlines and a to-do list for your move.</p>
+
+  <section class="card" aria-label="Your move">
+    <span class="example" id="exampleTag">Example shown · change the answers to match your move</span>
+    <div class="inputs">
+      <div>
+        <span class="qlabel" id="q1">Where are you moving?</span>
+        <div class="seg" role="group" aria-labelledby="q1" id="where">
+          <button type="button" data-v="into" aria-pressed="true">To SC from another state</button>
+          <button type="button" data-v="within" aria-pressed="false">To a new county in SC</button>
+          <button type="button" data-v="out" aria-pressed="false">Leaving SC</button>
+        </div>
+      </div>
+      <div>
+        <span class="qlabel" id="q2">What coverage do you have now?</span>
+        <div class="seg" role="group" aria-labelledby="q2" id="cov">
+          <button type="button" data-v="ma" aria-pressed="true">Medicare Advantage</button>
+          <button type="button" data-v="medigap" aria-pressed="false">Original Medicare + supplement</button>
+          <button type="button" data-v="orig" aria-pressed="false">Original Medicare only</button>
+        </div>
+        <div class="checks">
+          <label for="pdp"><input type="checkbox" id="pdp"> I have a separate Part D drug plan</label>
+          <label for="mcd"><input type="checkbox" id="mcd"> I get Medicaid or Extra Help</label>
+        </div>
+      </div>
+      <div>
+        <label for="when">When are you moving?</label>
+        <input type="month" id="when">
+        <div class="hint">Nothing you enter is saved or sent anywhere.</div>
+      </div>
+    </div>
+  </section>
+
+  <h2 id="sepTitle">Your deadline</h2>
+  <div id="sep"></div>
+
+  <h2>Your to-do list</h2>
+  <div class="card"><ol class="todo" id="todo"></ol></div>
+
+  <section class="callbox noprint" aria-label="Talk to us">
+    <h3 id="ctaTitle">Moving to South Carolina? We can line up your new plan.</h3>
+    <p id="ctaText">We're independent agents licensed in South Carolina. We'll check your doctors, your hospital and your prescriptions in your new county, at no cost to you.</p>
+    <div class="people">
+      <div class="who"><b>Jennifer Mauldin, Medicare</b><a href="tel:+18435092462">843-509-2462</a></div>
+      <div class="who"><b>Ben Mauldin</b><a href="tel:+18039208827">803-920-8827</a></div>
+    </div>
+    <p style="margin:14px 0 0"><a class="btn" href="/moving-to-sc-medicare-guide.html">Get the free Moving to SC guide</a></p>
+  </section>
+
+  <div class="fine">
+    <p>This tool explains Medicare's standard rules for moving. Your exact options depend on your plan and your new address. Confirm details with your plan, Medicare at 1-800-MEDICARE, or with us before you make a change.</p>
+  </div>
+</main>
+
+<script>
+(function(){
+  const MN=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  const st={where:"into",cov:"ma"};
+  const $=id=>document.getElementById(id);
+  const add=(y,m,k)=>{const t=y*12+m+k;return{y:Math.floor(t/12),m:((t%12)+12)%12}};
+  const first=o=>MN[o.m]+" 1, "+o.y;
+  const last=o=>MN[o.m]+" "+new Date(o.y,o.m+1,0).getDate()+", "+o.y;
+  const now=new Date(); const def=add(now.getFullYear(),now.getMonth(),2);
+  $("when").value=def.y+"-"+String(def.m+1).padStart(2,"0");
+
+  function render(){
+    const v=$("when").value; if(!v) return;
+    const [y,mo]=v.split("-").map(Number); const M={y,m:mo-1};
+    const pdp=$("pdp").checked, mcd=$("mcd").checked;
+    const w=st.where, c=st.cov;
+    const start=add(M.y,M.m,-1), end=add(M.y,M.m,2);
+    const needsPlanChange = c==="ma" || (pdp && w!=="within");
+    let sep="";
+    if(c==="ma" && w==="within"){
+      sep='<div class="card"><p class="big"><strong>Check whether your plan is offered in your new county.</strong></p><p>Medicare Advantage plans are approved county by county. If your plan isn\'t offered there, you must pick a new one. If it is, you can still switch when the move gives you new plan choices. Either way, your window is:</p><p class="window"><b>'+first(start)+'</b> to <b>'+last(end)+'</b></p><p class="note">That\'s if you tell your plan before you move. If you tell them after, the window starts the month you tell them and runs 2 more full months.</p></div>';
+    } else if(needsPlanChange){
+      sep='<div class="card"><p class="big">You\'ll need a new '+(c==="ma"?"Medicare Advantage plan":"drug plan")+' for your new home.</p><p>Your plan only covers people who live in its service area, so a plan from '+(w==="into"?"your old state":"South Carolina")+' won\'t follow you. Your special window to switch:</p><p class="window"><b>'+first(start)+'</b> to <b>'+last(end)+'</b></p><p class="note">That\'s if you tell your plan before you move. If you tell them after, the window starts the month you tell them and runs 2 more full months. New coverage starts the 1st of the month after the plan gets your enrollment.</p>'+(c==="ma"?'<p class="warn">If you don\'t pick a new plan in time, you\'ll be moved to Original Medicare, which may leave you without drug coverage.</p>':'')+'</div>';
+    } else {
+      sep='<div class="card"><p class="big"><strong>No sign-up deadline from this move.</strong></p><p>Original Medicare works anywhere in the U.S.'+(c==="medigap"?' Your supplement usually stays in force as long as you keep paying the premium.':'')+' You mainly need to update your address.</p></div>';
+    }
+    $("sep").innerHTML=sep;
+
+    const T=[];
+    T.push(["Update your address with Social Security","Online at ssa.gov or by calling 1-800-772-1213. Medicare gets your address from Social Security. Your Medicare card stays the same."]);
+    if(c==="ma"){
+      T.push(["Call your current plan before you move","Tell them your move date. That starts your switching window early so there's no gap."]);
+      T.push([w==="out"?"Pick a plan offered at your new address":"Choose a plan offered in your new SC county","Check that your doctors, your hospital and your pharmacy are in the network there. Networks can change a lot from one county to the next."]);
+      if(w!=="within") T.push(["Ask about your supplement rights","If you leave your plan's service area, you may have a guaranteed right to buy certain Medicare supplement plans without health questions. That right lasts 63 days after your old coverage ends."]);
+    }
+    if(c==="medigap"){
+      T.push(["Tell your supplement company your new address","Your premium may change based on where you live. If your plan is a Medicare SELECT policy, it may only work locally, so ask if you'll need a different plan."]);
+      T.push(["Your doctors","With Original Medicare and a supplement, you can see any doctor in the U.S. who takes Medicare. Ask new doctors if they accept Medicare patients."]);
+    }
+    if(c!=="ma" && pdp){
+      if(w==="within") T.push(["Your drug plan","Drug plans are sold statewide, so your plan usually stays the same when you move within South Carolina. Check that your new pharmacy is in its network."]);
+      else T.push(["Pick a new drug plan","Stand-alone drug plans are sold by region, so a plan from your old state usually won't cover you in your new one. Choose a new plan in the window above, and check your pharmacy and drug costs."]);
+    }
+    if(c==="orig" && !pdp) T.push(["Think about drug and gap coverage","Without a drug plan you may owe a late penalty when you do sign up. A move is a good time to review whether a supplement or drug plan makes sense for you."]);
+    if(mcd){
+      if(w==="into") T.push(["Apply for Medicaid in South Carolina","Medicaid doesn't transfer between states. Apply with SC Healthy Connections Medicaid after you move. Extra Help is federal, so just report your new address to Social Security."]);
+      else if(w==="out") T.push(["Apply for Medicaid in your new state","Medicaid doesn't transfer between states. Report your move to SC Healthy Connections and apply in your new state. Extra Help is federal, so just report your new address to Social Security."]);
+      else T.push(["Update your address with SC Healthy Connections","Medicaid stays the same within South Carolina, but they need your new address and county."]);
+    }
+    T.push(["Get copies of your records","Ask your current doctors for records and a 90-day supply of prescriptions so you're covered while you get set up."]);
+    $("todo").innerHTML=T.map(t=>'<li><b>'+t[0]+'</b><span>'+t[1]+'</span></li>').join("");
+
+    if(w==="out"){ $("ctaTitle").textContent="Leaving South Carolina?"; $("ctaText").textContent="We're licensed in South Carolina, so we can't sell plans in your new state. We're still glad to answer questions about what to do before you go."; }
+    else if(w==="within"){ $("ctaTitle").textContent="Moving to a new county? We'll check your plan."; $("ctaText").textContent="We'll see whether your plan works in your new county and whether your doctors are still in network, at no cost to you."; }
+    else { $("ctaTitle").textContent="Moving to South Carolina? We can line up your new plan."; $("ctaText").textContent="We're independent agents licensed in South Carolina. We'll check your doctors, your hospital and your prescriptions in your new county, at no cost to you."; }
+  }
+  function seg(id,key){ $(id).addEventListener("click",e=>{const b=e.target.closest("button"); if(!b) return; st[key]=b.dataset.v; [...$(id).querySelectorAll("button")].forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false")); $("exampleTag").hidden=true; render();}); }
+  seg("where","where"); seg("cov","cov");
+  ["when","pdp","mcd"].forEach(i=>$(i).addEventListener("input",()=>{$("exampleTag").hidden=true;render();}));
+  ["pdp","mcd"].forEach(i=>$(i).addEventListener("change",render));
+  render();
+})();
+</script>
+<div id="footer-placeholder"></div>
+<script src="/nav.js"></script>
+<script src="/footer.js"></script>
+</body>
+</html>
