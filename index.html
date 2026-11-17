@@ -16,76 +16,147 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/tools.css" />
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://southcarolinamedicareagency.com/#website","name":"South Carolina Medicare Agency","url":"https://southcarolinamedicareagency.com/","publisher":{"@id":"https://www.mauldininsurancegroup.com/#organization"}},{"@type":"InsuranceAgency","@id":"https://www.mauldininsurancegroup.com/#organization","name":"Mauldin Insurance Group","url":"https://www.mauldininsurancegroup.com/","telephone":"+1-843-509-2462","areaServed":{"@type":"State","name":"South Carolina"}}]}</script><style>
-.hero{background:var(--navy);color:#fff}
-.hero .wrap{padding-block:48px 44px}
-.hero h1{color:#fff;max-width:18ch}
-.hero .lede{color:rgba(255,255,255,.85)}
-.hero .eyebrow{color:var(--gold)}
-.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:-22px}
-.tool{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--fg)}
-.tool:hover{border-color:var(--teal)}
-.tool .tag{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--teal)}
-.tool h3{margin:0}
-.tool p{margin:0;color:var(--muted);font-size:17px;flex:1}
-.tool .go{font-weight:700;color:var(--navy)}
-.tool.feature{border:2px solid var(--gold)}
-.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
-.split p{margin:0 0 10px}
+body{background:linear-gradient(#0c1a2e 0 260px,var(--bg) 260px)}
+.w{max-width:1200px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px))}
+.hero2{background:#0c1a2e;color:#fff;margin-top:-12px;padding-top:0;position:relative;overflow:hidden}
+.hero2::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 420px at 85% 20%,rgba(212,165,42,.18),transparent 65%),radial-gradient(800px 500px at 0% 100%,rgba(47,93,80,.45),transparent 65%);pointer-events:none}
+.hero2 .g{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center;padding-block:72px 84px}
+.hero2 .intro{font-size:16px;color:rgba(255,255,255,.7);margin:0 0 18px}
+.hero2 h1{color:#fff;font-size:clamp(40px,6.4vw,74px);margin:0 0 22px;max-width:14ch}
+.hero2 .lede{color:rgba(255,255,255,.8);max-width:48ch}
+.hero2 .jump{display:flex;flex-wrap:wrap;gap:10px}
+.hero2 .jump a{color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:10px 16px;border-radius:12px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);min-height:44px;display:inline-flex;align-items:center}
+.hero2 .jump a:hover{background:rgba(255,255,255,.14)}
+.calc{background:#f5f6f2;color:#14202f;border-radius:28px;padding:28px;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.calc h2{font-size:24px;margin:0 0 4px;line-height:1.15;color:#14202f}
+.calc .sub{margin:0 0 20px;color:#55636f;font-size:16px}
+.calc .row{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:12px}
+.calc input[type=month]{width:100%;font:inherit;font-size:18px;padding:10px 12px;border:1.5px solid #dfe5e8;border-radius:12px;background:#fff;color:#14202f;min-height:48px}
+.calc .seg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.calc .seg button{font:inherit;font-weight:700;font-size:15px;min-height:44px;border-radius:12px;border:1.5px solid #dfe5e8;background:transparent;color:#14202f;cursor:pointer;padding:6px}
+.calc .seg button[aria-pressed="true"]{background:#0c1a2e;border-color:#0c1a2e;color:#fff}
+.calc label{display:block;font-weight:700;font-size:15px;margin-bottom:6px}
+.calc select,.calc input[type=number]{width:100%;font:inherit;font-size:18px;padding:10px 12px;border:1.5px solid #dfe5e8;border-radius:12px;background:#fff;color:#14202f;min-height:48px}
+.calc .chk{display:flex;gap:10px;align-items:center;font-size:16px;margin:4px 0 18px;cursor:pointer}
+.calc .chk input{width:22px;height:22px;accent-color:#2f5d50}
+.calc .out{border-radius:18px;background:#0c1a2e;color:#fff;padding:20px 22px}
+.calc .out small{display:block;font-size:15px;color:rgba(255,255,255,.72)}
+.calc .out strong{display:block;font-family:var(--display);font-size:clamp(28px,4vw,38px);line-height:1.08;letter-spacing:-.025em;color:#e8bf4a;margin:6px 0 10px}
+.calc .out p{margin:0;font-size:15px;color:rgba(255,255,255,.78)}
+.calc .more{display:inline-block;margin-top:16px;font-weight:700;color:#2f5d50;text-decoration:none}
+.calc .more:hover{text-decoration:underline}
+@media (max-width:900px){.hero2 .g{grid-template-columns:1fr;gap:36px;padding-block:52px 56px}}
+.s{padding-top:88px}
+.s .head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:end;margin-bottom:28px}
+.s .head h2{font-size:clamp(32px,4.6vw,52px);line-height:1.02;margin:0}
+.s .head p{margin:0;color:var(--muted);max-width:48ch}
+@media (max-width:760px){.s{padding-top:64px}.s .head{grid-template-columns:1fr;gap:12px}}
+.bento{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.b{display:flex;flex-direction:column;justify-content:space-between;gap:16px;text-decoration:none;color:var(--fg);background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;min-height:210px}
+.b:hover{border-color:var(--teal)}
+.b h3{font-size:26px;line-height:1.1;margin:0 0 8px}
+.b p{margin:0;color:var(--muted);font-size:17px}
+.b .kind{font-size:14px;font-weight:700;color:var(--teal)}
+.b .go{font-weight:700}
+.b.dark{background:#2f5d50;border-color:#2f5d50;color:#fff}.b.dark h3{color:#fff}.b.dark p,.b.dark .kind{color:rgba(255,255,255,.82)}
+.b.gold{background:#d4a52a;border-color:#d4a52a;color:#0c1a2e}.b.gold h3{color:#0c1a2e}.b.gold p,.b.gold .kind{color:rgba(12,26,46,.78)}
+@media (max-width:700px){.bento{grid-template-columns:1fr}}
+.people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.person{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start}
+.person .av{width:72px;height:72px;border-radius:50%;background:linear-gradient(160deg,#2f5d50,#0c1a2e);color:#e8bf4a;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:28px}
+.person h3{margin:2px 0 6px;font-size:24px}
+.person p{margin:0 0 12px;color:var(--muted)}
+.person a.ph{font-family:var(--display);font-weight:700;font-size:24px;color:var(--fg);text-decoration:none;letter-spacing:-.02em}
+.person a.ph:hover{color:var(--teal)}
+@media (max-width:760px){.people{grid-template-columns:1fr}}
+.more-link{margin-top:20px;color:var(--muted)}
+.more-link a{color:var(--teal);font-weight:700}
+.mig-reads{max-width:1200px!important}
+@media (prefers-color-scheme: dark){.b,.person{background:#14223a}}
 </style>
 </head>
+
 <body>
 <div id="nav-placeholder"></div>
-<header class="hero">
-  <div class="wrap">
-    <div class="eyebrow">Medicare help for moving in South Carolina</div>
+<main id="main">
+<section class="hero2"><div class="w g">
+  <div>
+    <p class="intro">Medicare help for moving in South Carolina</p>
     <h1>Moving to South Carolina, or across it, with Medicare?</h1>
     <p class="lede">A move can change your Medicare plan, your doctors and your deadlines. These free tools from Jennifer and Ben Mauldin, independent agents based in Lexington, show you exactly what to do and when.</p>
+    <div class="jump"><a href="/moving-to-sc-medicare-guide.html">Relocation guide</a><a href="/what-happens-if-you-move-counties-medicare-advantage-south-carolina">Moving counties</a><a href="/why-medicare-advantage-networks-change-by-county-south-carolina">County networks</a></div>
   </div>
-</header>
-<main class="wrap" style="padding-top:0">
-  <div class="tools">
-    <a class="tool feature" href="/move-checker.html">
-      <span class="tag">Checker</span>
-      <h3>What does my move mean for Medicare?</h3>
-      <p>Answer three questions and see your plan-change deadline plus a to-do list for your move.</p>
-      <span class="go">Check my move →</span>
-    </a>
-    <a class="tool" href="/moving-to-sc-medicare-guide.html">
-      <span class="tag">Free guide</span>
-      <h3>Moving to South Carolina guide</h3>
-      <p>Everything that changes with Medicare when you relocate here, in one guide you can download.</p>
-      <span class="go">Get the guide →</span>
-    </a>
-    <a class="tool" href="/what-happens-if-you-move-counties-medicare-advantage-south-carolina">
-      <span class="tag">Explainer</span>
-      <h3>Moving to a new SC county</h3>
-      <p>What happens to a Medicare Advantage plan when you move from one South Carolina county to another.</p>
-      <span class="go">Read it →</span>
-    </a>
-    <a class="tool" href="/why-medicare-advantage-networks-change-by-county-south-carolina">
-      <span class="tag">Explainer</span>
-      <h3>Why networks change by county</h3>
-      <p>Why the same plan can cover your doctor in one county and not the next.</p>
-      <span class="go">Read it →</span>
-    </a>
+  <div class="calc" id="mv">
+    <h2>When can I change plans for my move?</h2>
+    <p class="sub">For Medicare Advantage and drug plans. Pick your move and the month you move.</p>
+    <div class="seg" role="group" aria-label="Where are you moving?">
+      <button type="button" data-w="into" aria-pressed="true">Into SC</button>
+      <button type="button" data-w="within" aria-pressed="false">Within SC</button>
+      <button type="button" data-w="out" aria-pressed="false">Out of SC</button>
+    </div>
+    <div class="row"><div><label for="mvWhen">Month you move</label><input type="month" id="mvWhen"></div></div>
+    <div class="out" aria-live="polite">
+      <small>Your window to switch plans</small>
+      <strong id="mvOut"></strong>
+      <p id="mvTxt"></p>
+    </div>
+    <a class="more" href="/move-checker.html">Get your full moving to-do list</a>
   </div>
+</div></section>
 
-  <h2>More free Medicare tools</h2>
-  <div class="split">
-    <div class="card"><h3>Turning 65?</h3><p>Our <a href="https://midlandsmedicare.com/deadlines.html">Medicare Deadlines Calculator</a> shows your sign-up window, coverage start and penalty dates.</p></div>
-    <div class="card"><h3>Reviewing your plan?</h3><p>Use the <a href="https://midlandsmedicare.com/checklist.html">plan review checklist</a> and the <a href="https://midlandsmedicare.com/quiz.html">coverage quiz</a> before you compare plans.</p></div>
+<section class="s w" id="tools">
+  <div class="head"><h2>Free moving tools</h2><p>What changes, what to do, and by when. Nothing to sign up for.</p></div>
+  <div class="bento">
+    <a class="b dark" href="/move-checker.html"><div><span class="kind">Checker</span><h3>What does my move mean for Medicare?</h3><p>Answer three questions and see your plan-change deadline plus a to-do list for your move.</p></div><span class="go">Check my move</span></a>
+    <a class="b gold" href="/moving-to-sc-medicare-guide.html"><div><span class="kind">Free guide</span><h3>Moving to South Carolina guide</h3><p>Everything that changes with Medicare when you relocate here, in one guide you can download.</p></div><span class="go">Get the guide</span></a>
+    <a class="b" href="/what-happens-if-you-move-counties-medicare-advantage-south-carolina"><div><span class="kind">Explainer</span><h3>Moving to a new SC county</h3><p>What happens to a Medicare Advantage plan when you move from one South Carolina county to another.</p></div><span class="go">Read it</span></a>
+    <a class="b" href="/why-medicare-advantage-networks-change-by-county-south-carolina"><div><span class="kind">Explainer</span><h3>Why networks change by county</h3><p>Why the same plan can cover your doctor in one county and not the next.</p></div><span class="go">Read it</span></a>
   </div>
+</section>
 
-  <h2>Who's behind these tools</h2>
-  <div class="split">
-    <div class="card"><h3>Jennifer Mauldin</h3><p>Leads our Medicare practice and helps people across South Carolina compare Medicare Advantage, supplement and drug plans.</p><p><b>843-509-2462</b></p></div>
-    <div class="card"><h3>Ben Mauldin</h3><p>Co-owner of Mauldin Insurance Group. Works alongside Jennifer on Medicare and handles life, home, auto and business coverage.</p><p><b>803-920-8827</b></p></div>
+<section class="s w">
+  <div class="head"><h2>More free Medicare tools</h2><p>On our sister site, Midlands Medicare.</p></div>
+  <div class="bento">
+    <a class="b" href="https://midlandsmedicare.com/deadlines.html"><div><span class="kind">Turning 65?</span><h3>Medicare Deadlines Calculator</h3><p>Shows your sign-up window, coverage start and penalty dates.</p></div><span class="go">Find my dates</span></a>
+    <a class="b" href="https://midlandsmedicare.com/checklist.html"><div><span class="kind">Reviewing your plan?</span><h3>Plan review checklist and coverage quiz</h3><p>Use the plan review checklist and the coverage quiz before you compare plans.</p></div><span class="go">Open the checklist</span></a>
   </div>
-  <p style="margin-top:18px">For plan details and everything else we do, visit <a href="https://www.mauldininsurancegroup.com/medicare">MauldinInsuranceGroup.com</a>.</p>
+</section>
 
+<section class="s w">
+  <div class="head"><h2>Who's behind these tools</h2><p>Two local agents in Lexington. When you call, you get one of us.</p></div>
+  <div class="people">
+    <div class="person"><div class="av" aria-hidden="true">JM</div><div><h3>Jennifer Mauldin</h3><p>Leads our Medicare practice and helps people across South Carolina compare Medicare Advantage, supplement and drug plans.</p><a class="ph" href="tel:+18435092462">843-509-2462</a></div></div>
+    <div class="person"><div class="av" aria-hidden="true">BM</div><div><h3>Ben Mauldin</h3><p>Co-owner of Mauldin Insurance Group. Works alongside Jennifer on Medicare and handles life, home, auto and business coverage.</p><a class="ph" href="tel:+18039208827">803-920-8827</a></div></div>
+  </div>
+  <p class="more-link">For plan details and everything else we do, visit <a href="https://www.mauldininsurancegroup.com/medicare">MauldinInsuranceGroup.com</a>.</p>
+</section>
+
+<div class="w">
 <section class="mig-reads" aria-labelledby="mrh"><style>.mig-reads{max-width:900px;margin:32px auto 0;padding:0 16px;box-sizing:border-box}.mig-reads h2{font-size:24px;margin:0 0 12px}.mig-reads .mr-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.mig-reads a{display:block;background:var(--paper,#fff);border:1px solid var(--line,#d8e2ea);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--navy,#1a2e5a);font-weight:700;line-height:1.35}.mig-reads a:hover{border-color:var(--teal,#0e7490)}.mig-reads a span{display:block;font-weight:400;font-size:14px;color:var(--muted,#566373);margin-top:6px}.wrap .mig-reads{padding:0}</style><h2 id="mrh">More tools and reading from our team</h2><div class="mr-g"><a href="https://www.mauldininsurancegroup.com/medicare-penalty-calculators">Free Medicare late penalty and IRMAA calculators<span>Use the calculators on MauldinInsuranceGroup.com →</span></a>
 <a href="https://www.mauldininsurancegroup.com/blogs/moving-to-south-carolina-for-retirement--here-s-what-happens-to-your-medicare">Moving to SC for retirement: what happens to your Medicare<span>Read on MauldinInsuranceGroup.com →</span></a><a href="https://www.mauldininsurancegroup.com/blogs/moving-to-south-carolina--your-30-day-insurance-checklist-for-cars--home--flood-zones--and-boat-coverage">Moving to SC: your 30-day insurance checklist<span>Read on MauldinInsuranceGroup.com →</span></a><a href="https://www.mauldininsurancegroup.com/blogs/can-you-switch-from-medicare-advantage-to-medigap-later--the-trap-south-carolina-retirees-miss">Can you switch from Medicare Advantage to Medigap later?<span>Read on MauldinInsuranceGroup.com →</span></a></div></section>
+</div>
 </main>
+<script>
+(function(){
+  var MN=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var w='into',inp=document.getElementById('mvWhen'),btns=[].slice.call(document.querySelectorAll('.calc .seg button'));
+  var n=new Date(),d=new Date(n.getFullYear(),n.getMonth()+2,1);
+  inp.value=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0');
+  function first(y,m){var x=new Date(y,m,1);return MN[x.getMonth()]+' 1, '+x.getFullYear()}
+  function last(y,m){var x=new Date(y,m+1,0);return MN[x.getMonth()]+' '+x.getDate()+', '+x.getFullYear()}
+  function run(){
+    if(!inp.value)return;var p=inp.value.split('-'),y=+p[0],m=+p[1]-1;
+    document.getElementById('mvOut').textContent=first(y,m-1)+' to '+last(y,m+2);
+    var t='That\'s if you tell your plan before you move. If you tell them after, the window starts the month you tell them and runs 2 more full months.';
+    if(w==='within')t='If your Medicare Advantage plan isn\'t offered in your new county, you must pick a new one in this window. '+t;
+    if(w==='out')t='Your South Carolina plan won\'t follow you, so pick a plan offered at your new address. '+t;
+    if(w==='into')t='A plan from your old state won\'t cover you here, so pick a South Carolina plan. '+t;
+    document.getElementById('mvTxt').textContent=t;
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){w=b.dataset.w;btns.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});run();});});
+  inp.addEventListener('input',run);inp.addEventListener('change',run);run();
+})();
+</script>
 <div id="footer-placeholder"></div>
 <script src="/nav.js"></script>
 <script src="/footer.js"></script>

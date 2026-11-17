@@ -1,309 +1,84 @@
-// Mauldin Insurance Group — South Carolina Medicare Agency
-// Central Navigation — edit this file to update ALL pages at once
-
+// South Carolina Medicare Agency — Central Navigation (version 2: floating pill bar)
 document.addEventListener('DOMContentLoaded', function () {
   const navHTML = `
-  <nav class="site-nav" id="site-nav">
+  <a class="mm-skip" href="#main">Skip to content</a>
+  <div class="nav-bg" aria-hidden="true"></div>
+  <div class="site-nav" id="site-nav">
     <div class="nav-inner">
-      <a href="/" class="nav-logo">
-        <img src="https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png" alt="Mauldin Insurance Group" class="nav-logo-img" />
-        <div class="nav-logo-text">
-          <span class="nav-logo-top">Mauldin Insurance Group</span>
-          <span class="nav-logo-sub">South Carolina Medicare Agency</span>
-        </div>
+      <a href="/" class="nav-brand">
+        <img src="/favicon.png" alt="South Carolina Medicare Agency" width="40" height="40" />
+        <span class="nav-brand-name">SC Medicare Agency</span>
       </a>
-
-      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-
-      <ul class="nav-links" id="nav-links">
-        <li><a class="nav-link" href="/move-checker.html" style="color:#c9a227;font-weight:700;">Moving Checker</a></li>
-        <li><a class="nav-link" href="/moving-to-sc-medicare-guide.html">Free Relocation Guide</a></li>
-        <li class="nav-dropdown">
-          <button class="nav-link nav-drop-btn">County Moves <span class="nav-arrow">▾</span></button>
-          <ul class="nav-submenu">
-            <li><a href="/what-happens-if-you-move-counties-medicare-advantage-south-carolina">Moving Counties on Medicare</a></li>
-            <li><a href="/why-medicare-advantage-networks-change-by-county-south-carolina">Why Networks Change by County</a></li>
-          </ul>
-        </li>
-        <li class="nav-dropdown">
-          <button class="nav-link nav-drop-btn">More Tools <span class="nav-arrow">▾</span></button>
-          <ul class="nav-submenu">
-            <li><a href="https://midlandsmedicare.com/deadlines.html">Medicare Deadlines Calculator</a></li>
-            <li><a href="https://midlandsmedicare.com/quiz.html">Medicare Coverage Quiz</a></li>
-            <li><a href="https://midlandsmedicare.com/checklist.html">Plan Review Checklist</a></li>
-            <li><a href="https://www.mauldininsurancegroup.com/medicare">Medicare Plans in SC</a></li>
-          </ul>
-        </li>
-        <li><a href="/service-areas" class="nav-link">Service Areas</a></li>
-      </ul>
-
-      <div class="nav-ctas">
-        <a href="tel:+18435092462" class="nav-phone">843-509-2462</a>
-        <a href="/quiz.html" class="nav-quiz">Free Quiz</a>
-        <a href="https://www.mauldininsurancegroup.com/contact" class="nav-consult" target="_blank">Free Consultation</a>
-      </div>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="/move-checker.html" class="nav-link">Moving checker</a>
+        <a href="/moving-to-sc-medicare-guide.html" class="nav-link">Relocation guide</a>
+        <a href="/what-happens-if-you-move-counties-medicare-advantage-south-carolina" class="nav-link">Moving counties</a>
+        <a href="/why-medicare-advantage-networks-change-by-county-south-carolina" class="nav-link">County networks</a>
+        <a href="https://midlandsmedicare.com/" class="nav-link">More Medicare tools</a>
+        <a href="tel:+18435092462" class="nav-link nav-phone-m">Call Jennifer 843-509-2462</a>
+      </nav>
+      <a href="tel:+18435092462" class="nav-phone">843-509-2462</a>
+      <a href="https://www.mauldininsurancegroup.com/contact" class="nav-cta">Free consultation</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
     </div>
-  </nav>`;
+  </div>`;
 
-  const navCSS = `
-  <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: 'Georgia', 'Times New Roman', serif; }
-
-    .site-nav {
-      background: #1a2e5a;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+  const navCSS = `<style>
+    .mm-skip{position:absolute;left:-9999px;top:0;background:#d4a52a;color:#0c1a2e;padding:8px 14px;font-weight:700;z-index:2000}
+    .mm-skip:focus{left:12px;top:12px}
+    .nav-bg{position:absolute;left:0;right:0;top:0;height:86px;background:#0c1a2e;z-index:0}
+    .site-nav{position:sticky;top:12px;z-index:1000;margin:12px auto;max-width:1200px;padding:0 max(12px,env(safe-area-inset-left,0px))}
+    .nav-inner{position:relative;display:flex;align-items:center;gap:10px;background:rgba(12,26,46,.9);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:8px 8px 8px 12px;font-family:'Source Sans 3',sans-serif}
+    .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto;flex-shrink:0}
+    .nav-brand img{width:40px;height:40px;border-radius:50%;object-fit:cover;background:#fff}
+    .nav-brand-name{font-family:'Bricolage Grotesque','Source Sans 3',sans-serif;font-size:18px;font-weight:700;color:#fff;letter-spacing:-.01em;white-space:nowrap}
+    .nav-links{display:flex;align-items:center;gap:2px}
+    .nav-link{font-size:15px;font-weight:600;color:rgba(255,255,255,.84);text-decoration:none;padding:8px 11px;border-radius:999px;white-space:nowrap}
+    .nav-link:hover{background:rgba(255,255,255,.08);color:#fff}
+    .nav-link[aria-current="page"]{color:#e8bf4a}
+    .nav-phone-m{display:none}
+    .nav-phone{font-size:15px;font-weight:700;color:#e8bf4a;text-decoration:none;padding:8px 8px;white-space:nowrap}
+    .nav-cta{background:#d4a52a;color:#0c1a2e;text-decoration:none;font-weight:700;padding:10px 18px;border-radius:999px;font-size:15px;white-space:nowrap}
+    .nav-cta:hover{background:#e8bf4a}
+    .nav-toggle{display:none;flex-direction:column;justify-content:center;gap:6px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:transparent;cursor:pointer;padding:0 12px}
+    .nav-toggle span{display:block;height:2px;background:#fff;border-radius:2px}
+    .site-nav a:focus-visible,.site-nav button:focus-visible{outline:3px solid #d4a52a;outline-offset:2px}
+    @media(max-width:1320px){.nav-phone{display:none}}
+    @media(max-width:980px){
+      .nav-toggle{display:flex}
+      .nav-links{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;flex-direction:column;align-items:stretch;background:#0c1a2e;border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:10px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+      .nav-links.open{display:flex}
+      .nav-link{padding:12px 14px;border-radius:14px;font-size:17px}
+      .nav-phone-m{display:block;color:#e8bf4a}
     }
-    .nav-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 0 20px;
-      height: 68px;
-    }
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      flex-shrink: 0;
-    }
-    .nav-logo-img {
-      height: 44px;
-      width: auto;
-      max-width: 130px;
-      object-fit: contain;
-      flex-shrink: 0;
-      display: block;
-    }
-    .nav-logo-text { display: flex; flex-direction: column; }
-    .nav-logo-top { color: white; font-size: 13px; font-weight: bold; letter-spacing: 0.5px; line-height: 1.2; }
-    .nav-logo-sub { color: #c9a227; font-size: 10px; letter-spacing: 0.5px; line-height: 1.2; }
-
-    .nav-links {
-      display: flex;
-      list-style: none;
-      margin: 0 0 0 auto;
-      padding: 0;
-      gap: 2px;
-      align-items: center;
-    }
-    .nav-link {
-      color: rgba(255,255,255,0.9);
-      text-decoration: none;
-      font-size: 13px;
-      padding: 8px 12px;
-      border-radius: 4px;
-      transition: background 0.2s, color 0.2s;
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-family: Georgia, serif;
-      white-space: nowrap;
-    }
-    .nav-link:hover, .nav-drop-btn:hover { background: rgba(255,255,255,0.12); color: #c9a227; }
-    .nav-arrow { font-size: 10px; margin-left: 3px; }
-
-    .nav-dropdown { position: relative; }
-    .nav-dropdown:hover .nav-submenu,
-    .nav-dropdown.open .nav-submenu { display: block; }
-    .nav-submenu {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: #1a2e5a;
-      border: 1px solid rgba(201,162,39,0.3);
-      border-radius: 6px;
-      list-style: none;
-      padding: 6px 0;
-      margin: 0;
-      min-width: 220px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-      z-index: 100;
-    }
-    .nav-submenu li a {
-      display: block;
-      padding: 9px 18px;
-      color: rgba(255,255,255,0.88);
-      text-decoration: none;
-      font-size: 13px;
-      transition: background 0.15s, color 0.15s;
-      white-space: nowrap;
-    }
-    .nav-submenu li a:hover { background: rgba(201,162,39,0.15); color: #c9a227; }
-
-    .nav-ctas {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-left: 12px;
-      flex-shrink: 0;
-      flex-wrap: nowrap;
-    }
-    .nav-phone {
-      color: #c9a227;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: bold;
-      white-space: nowrap;
-    }
-    .nav-phone:hover { color: white; }
-    .nav-quiz {
-      background: #0e7490;
-      color: white;
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: bold;
-      padding: 8px 14px;
-      border-radius: 4px;
-      white-space: nowrap;
-      transition: background 0.2s;
-    }
-    .nav-quiz:hover { background: #0c6377; }
-    .nav-consult {
-      background: #c9a227;
-      color: #1a2e5a;
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: bold;
-      padding: 8px 14px;
-      border-radius: 4px;
-      white-space: nowrap;
-      transition: background 0.2s;
-    }
-    .nav-consult:hover { background: #e0b82d; }
-
-    .nav-hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 8px;
-      margin-left: auto;
-    }
-    .nav-hamburger span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: white;
-      border-radius: 2px;
-      transition: all 0.3s;
-    }
-
-    .nav-links-mobile-ctas { display: none; }
-    @media (max-width: 900px) {
-      .nav-hamburger { display: flex; }
-      .nav-ctas { display: none; }
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 68px;
-        left: 0;
-        right: 0;
-        background: #1a2e5a;
-        padding: 12px 0 20px;
-        border-top: 1px solid rgba(201,162,39,0.3);
-        margin: 0;
-        gap: 0;
-        z-index: 999;
-      }
-      .nav-links.open { display: flex; }
-      .nav-links > li { width: 100%; }
-      .nav-link, .nav-drop-btn { width: 100%; text-align: left; padding: 12px 24px; font-size: 15px; }
-      .nav-submenu {
-        position: static;
-        box-shadow: none;
-        border: none;
-        border-left: 3px solid #c9a227;
-        margin-left: 20px;
-        border-radius: 0;
-        background: rgba(0,0,0,0.2);
-        padding: 4px 0;
-      }
-      .nav-submenu li a { padding: 10px 20px; font-size: 14px; }
-      .nav-dropdown:hover .nav-submenu { display: none; }
-      .nav-dropdown.open .nav-submenu { display: block; }
-      .nav-links-mobile-ctas {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        padding: 12px 24px 4px;
-        border-top: 1px solid rgba(255,255,255,0.1);
-        margin-top: 8px;
-      }
-      .nav-links-mobile-ctas a {
-        display: block;
-        text-align: center;
-        padding: 11px;
-        border-radius: 6px;
-        font-size: 14px;
-        font-weight: bold;
-        text-decoration: none;
-      }
-      .mobile-quiz-btn { background: #0e7490; color: white; }
-      .mobile-phone-btn { background: #c9a227; color: #1a2e5a; }
-      .mobile-consult-btn { border: 1.5px solid rgba(255,255,255,0.4); color: rgba(255,255,255,0.85); }
-    }
+    @media(max-width:520px){.nav-cta{padding:10px 14px;font-size:14px}.nav-brand-name{font-size:16px}}
+    @media(max-width:440px){.nav-brand-name{font-size:15px}.nav-cta{padding:9px 12px;font-size:13px}.nav-inner{gap:6px}}@media(max-width:400px){.nav-brand-name{display:none}}
+    @media print{.site-nav{display:none!important}}
   </style>`;
 
-  // Inject styles into head
   document.head.insertAdjacentHTML('beforeend', navCSS);
-
-  // Inject nav HTML
   const placeholder = document.getElementById('nav-placeholder');
   if (placeholder) {
     placeholder.outerHTML = navHTML;
   } else {
     document.body.insertAdjacentHTML('afterbegin', navHTML);
   }
+  if (!document.getElementById('main')) {
+    const m = document.querySelector('main');
+    if (m) m.id = 'main';
+  }
 
-  // Mobile hamburger toggle — also injects mobile CTAs into open menu
-  setTimeout(() => {
-    const hamburger = document.getElementById('nav-hamburger');
-    const navLinks = document.getElementById('nav-links');
-    if (hamburger && navLinks) {
-      // Add mobile CTA buttons to the bottom of the mobile menu
-      const mobileCTAs = document.createElement('li');
-      mobileCTAs.innerHTML = `
-        <div class="nav-links-mobile-ctas">
-          <a href="tel:+18435092462" class="mobile-phone-btn">📞 843-509-2462</a>
-          <a href="/quiz.html" class="mobile-quiz-btn">📋 Free Medicare Quiz</a>
-          <a href="https://www.mauldininsurancegroup.com/contact" class="mobile-consult-btn" target="_blank">Free Consultation</a>
-        </div>`;
-      navLinks.appendChild(mobileCTAs);
+  const here = location.pathname;
+  document.querySelectorAll('.nav-link').forEach(a => {
+    if (a.getAttribute('href') === here || a.getAttribute('href') + '.html' === here || a.getAttribute('href') === here.replace(/\.html$/,'')) a.setAttribute('aria-current', 'page');
+  });
 
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
-      });
-    }
-    // Mobile dropdown toggles
-    document.querySelectorAll('.nav-drop-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        const li = btn.closest('li');
-        const isOpen = li.classList.contains('open');
-        document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
-        if (!isOpen) li.classList.add('open');
-      });
+  const toggle = document.getElementById('nav-toggle');
+  const links = document.getElementById('nav-links');
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-    // Highlight current page
-    const current = window.location.pathname.replace(/\/$/, '');
-    document.querySelectorAll('.nav-submenu a, .nav-links > li > a').forEach(link => {
-      const href = link.getAttribute('href');
-      if (href && (href === current || href === current + '/')) {
-        link.style.color = '#c9a227';
-        link.style.fontWeight = 'bold';
-      }
-    });
-  }, 0);
+  }
 });

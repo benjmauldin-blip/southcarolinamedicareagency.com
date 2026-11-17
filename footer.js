@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const footerCSS = `
   <style>
     .site-footer {
-      background: #0d1e3f;
+      background: #0c1a2e;
       color: rgba(255,255,255,0.8);
       font-family: 'Source Sans 3', sans-serif;
       padding: 56px 20px 0;
@@ -22,22 +22,22 @@ document.addEventListener('DOMContentLoaded', function () {
     .footer-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
     .footer-logo-text { display: flex; flex-direction: column; }
     .footer-logo-name { font-size: 15px; font-weight: 700; color: white; line-height: 1.2; }
-    .footer-logo-sub { font-size: 11px; color: #c9a227; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
+    .footer-logo-sub { font-size: 11px; color: #e8bf4a; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
     .footer-tagline { font-size: 14px; line-height: 1.7; color: rgba(255,255,255,0.65); margin: 0 0 12px; }
     .footer-address { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.5; margin: 0 0 16px; }
     .footer-rating { display: flex; align-items: center; gap: 8px; font-size: 13px; color: rgba(255,255,255,0.65); }
-    .footer-rating span:first-child { color: #c9a227; font-size: 15px; }
+    .footer-rating span:first-child { color: #e8bf4a; font-size: 15px; }
     .footer-contact h4, .footer-links h4 {
       font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
-      color: #c9a227; margin: 0 0 16px; font-family: 'Source Sans 3', sans-serif;
+      color: #e8bf4a; margin: 0 0 16px; font-family: 'Source Sans 3', sans-serif;
     }
     .footer-contact p { margin: 0 0 6px; font-size: 14px; line-height: 1.5; }
     .footer-agent-name { color: white; font-weight: 700; font-size: 13px; margin-bottom: 2px !important; }
     .footer-contact a { color: rgba(255,255,255,0.75); text-decoration: none; transition: color 0.2s; }
-    .footer-contact a:hover { color: #c9a227; }
+    .footer-contact a:hover { color: #e8bf4a; }
     .footer-links ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
     .footer-links ul li a { font-size: 14px; color: rgba(255,255,255,0.75); text-decoration: none; transition: color 0.2s; }
-    .footer-links ul li a:hover { color: #c9a227; }
+    .footer-links ul li a:hover { color: #e8bf4a; }
     .footer-disclaimer { font-size: 11px; color: rgba(255,255,255,0.35); line-height: 1.6; margin: 28px 0 0; padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.07); }
     .footer-copy { font-size: 12px; color: rgba(255,255,255,0.4); text-align: center; padding: 16px 0 24px; margin: 0; border-top: 1px solid rgba(255,255,255,0.07); }
     @media (max-width: 1024px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; } }
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="https://midlandsmedicare.com/deadlines.html">Medicare Deadlines Calculator</a></li>
             <li><a href="https://midlandsmedicare.com/quiz.html">Medicare Coverage Quiz</a></li>
             <li><a href="https://midlandsmedicare.com/checklist.html">Plan Review Checklist</a></li>
-            <li><a href="https://www.mauldininsurancegroup.com/medicare" style="color:#c9a227;font-weight:600;">Medicare Plans in SC →</a></li>
+            <li><a href="https://www.mauldininsurancegroup.com/medicare" style="color:#e8bf4a;font-weight:600;">Medicare Plans in SC →</a></li>
           </ul>
         </div>
       </div>
